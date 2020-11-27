@@ -18,9 +18,9 @@ type sessionData struct {
 	ts time.Time
 }
 
-func updateSession(chatID int64) (Menu, bool) {
+func updateSession(chatID int64, forceNew bool) (Menu, bool) {
 	sess, ok := sessions.Load(chatID)
-	if !ok {
+	if !ok || forceNew {
 		data := &sessionData{
 			m:  newMenuFunction(),
 			ts: time.Now(),
@@ -68,7 +68,11 @@ func Update(update tgbotapi.Update) ([]tgbotapi.MessageConfig, error) {
 	}
 
 	chatID := update.Message.Chat.ID
-	m, newSession := updateSession(chatID)
+	forceNew := false
+	if update.Message.Text == "/reset" {
+		forceNew = true
+	}
+	m, newSession := updateSession(chatID, forceNew)
 	if newSession {
 		return sendMessage(chatID, m.Reset())
 	}
