@@ -92,6 +92,8 @@ func LoadCards() (*BloodRage, error) {
 		b.Ages = append(b.Ages, age)
 	}
 
+	b.Ages = append(b.Ages, menu.NewSimpleLeaf("About","Bloodrage Cards\n<b>Translated by</b>: Forud Ghafouri"))
+
 	return b, nil
 }
 
