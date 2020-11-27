@@ -61,6 +61,7 @@ func sendMessage(chatID int64, resp Response) ([]tgbotapi.MessageConfig, error) 
 	}
 }
 
+// Update handle updates from telegram
 func Update(update tgbotapi.Update) ([]tgbotapi.MessageConfig, error) {
 	if update.Message == nil {
 		return nil, nil
@@ -75,6 +76,7 @@ func Update(update tgbotapi.Update) ([]tgbotapi.MessageConfig, error) {
 	return sendMessage(chatID, m.Process(update.Message.Text))
 }
 
+// InitLibrary should be called before calling update
 func InitLibrary(fn func() Menu) {
 	newMenuFunction = fn
 

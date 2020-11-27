@@ -8,10 +8,12 @@ import (
 	"github.com/fzerorubigd/persianbgbot/pkg/telegram"
 )
 
+// Item is a single item in menu (Node or Leaf)
 type Item interface {
 	Index() string
 }
 
+// Node is an item in menu
 type Node interface {
 	Item
 
@@ -19,6 +21,7 @@ type Node interface {
 	Caption() string
 }
 
+// Leaf is a leaf in menu
 type Leaf interface {
 	Item
 
@@ -32,8 +35,8 @@ const (
 	reset   = "🤷🏻‍"
 )
 
-// MemTree is a in memory tree of states, NOT CONCURRENT SAFE
-type MemTree struct {
+// memoryMenu is a in memory tree of states, NOT CONCURRENT SAFE
+type memoryMenu struct {
 	root []Node
 
 	caption  string
@@ -45,7 +48,7 @@ type MemTree struct {
 	lastFilter string
 }
 
-func (t *MemTree) buildFilteredMenu(filter string) bool {
+func (t *memoryMenu) buildFilteredMenu(filter string) bool {
 	t.filtered = make([]Item, 0, len(t.current))
 	for idx := range t.current {
 		if t.current[idx].Index() == filter {
@@ -81,7 +84,7 @@ func appendItems(parentItem, backItem, forwardItem bool, text string, items ...s
 	return telegram.NewButtonResponse(text, result...)
 }
 
-func (t *MemTree) buildMenu(filter string) telegram.Response {
+func (t *memoryMenu) buildMenu(filter string) telegram.Response {
 	if t.start < 0 {
 		t.start = 0
 	}
@@ -144,7 +147,7 @@ func (t *MemTree) buildMenu(filter string) telegram.Response {
 	return appendItems(len(t.root) > 1, t.start > 0, false, t.caption, items[t.start:]...)
 }
 
-func (t *MemTree) Reset() telegram.Response {
+func (t *memoryMenu) Reset() telegram.Response {
 	t.root = t.root[:1]
 	t.current = t.root[0].Load()
 	t.caption = t.root[0].Caption()
@@ -152,7 +155,7 @@ func (t *MemTree) Reset() telegram.Response {
 	return t.buildMenu("")
 }
 
-func (t *MemTree) Process(message string) telegram.Response {
+func (t *memoryMenu) Process(message string) telegram.Response {
 	if message == reset {
 		return t.buildMenu("")
 	}
@@ -198,7 +201,8 @@ func (r *rootMenu) Caption() string {
 	return "Select the game"
 }
 
-func CreateMenu(limit int, menu ...Node) (telegram.Menu, error) {
+// CreateMemoryMenu creates in memory app
+func CreateMemoryMenu(limit int, menu ...Node) (telegram.Menu, error) {
 	if len(menu) == 0 {
 		return nil, errors.New("at least one root menu is required")
 	}
@@ -210,7 +214,7 @@ func CreateMenu(limit int, menu ...Node) (telegram.Menu, error) {
 		root.games = append(root.games, menu[n])
 	}
 
-	return &MemTree{
+	return &memoryMenu{
 		root:  []Node{root},
 		limit: limit,
 	}, nil

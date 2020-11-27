@@ -1,3 +1,4 @@
+// Package bloodrage contains data for blodrage game
 package bloodrage
 
 import (
@@ -9,8 +10,8 @@ import (
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
 )
 
-// Card is a single card in game
-type Card struct {
+// card is a single card in game
+type card struct {
 	Name        string `yaml:"Name"`
 	STR         string `yaml:"STR"`
 	PlayerCount string `yaml:"PlayerCount"`
@@ -18,11 +19,11 @@ type Card struct {
 	Persian     string `yaml:"Persian"`
 }
 
-func (c *Card) Index() string {
+func (c *card) Index() string {
 	return c.Name
 }
 
-func (c *Card) Message() string {
+func (c *card) Message() string {
 	text := fmt.Sprintf(`
 <i><b>%s</b></i>
 <b>قدرت کارت (STR)</b>: 
@@ -36,35 +37,40 @@ func (c *Card) Message() string {
 	return text
 }
 
-type Age struct {
+type age struct {
 	Name  string
 	Cards []menu.Item
 }
 
-func (a *Age) Caption() string {
+func (a *age) Caption() string {
 	return "Select the card to show: "
 }
 
-func (a *Age) Index() string {
+func (a *age) Index() string {
 	return a.Name
 }
 
-func (a *Age) Load() []menu.Item {
+func (a *age) Load() []menu.Item {
 	return a.Cards
 }
 
+// BloodRage contains cards for bloodrage game
 type BloodRage struct {
 	Ages []menu.Item
 }
 
+
+// Caption returns the caption
 func (b *BloodRage) Caption() string {
-	return "Select one bloodrage Age:"
+	return "Select one bloodrage age:"
 }
 
+// Index returns the index
 func (b *BloodRage) Index() string {
 	return "Bloodrage"
 }
 
+// Load return cards inside it
 func (b *BloodRage) Load() []menu.Item {
 	return b.Ages
 }
@@ -75,14 +81,14 @@ func LoadCards() (*BloodRage, error) {
 	if err != nil {
 		return nil, errors.Wrap(err, "can not load the files from bin storage")
 	}
-	var result map[string][]*Card
+	var result map[string][]*card
 	if err := yaml.Unmarshal(fl, &result); err != nil {
 		return nil, errors.Wrap(err, "load yaml data failed")
 	}
 
 	b := &BloodRage{}
 	for a := range result {
-		age := &Age{
+		age := &age{
 			Name:  a,
 			Cards: nil,
 		}
@@ -92,7 +98,7 @@ func LoadCards() (*BloodRage, error) {
 		b.Ages = append(b.Ages, age)
 	}
 
-	b.Ages = append(b.Ages, menu.NewSimpleLeaf("About","Bloodrage Cards\n<b>Translated by</b>: Forud Ghafouri"))
+	b.Ages = append(b.Ages, menu.NewSimpleLeaf("About", "Bloodrage Cards\n<b>Translated by</b>: Forud Ghafouri"))
 
 	return b, nil
 }

@@ -31,7 +31,7 @@ func main() {
 		token = os.Getenv("TELEGRAM_BOT_TOKEN")
 	}
 	telegram.InitLibrary(func() telegram.Menu {
-		m, err := menu.CreateMenu(menuSize, menu.AllGames()...)
+		m, err := menu.CreateMemoryMenu(menuSize, menu.AllGames()...)
 		if err != nil {
 			log.Fatal(err)
 		}

@@ -33,6 +33,7 @@ type Response interface {
 	SetText(string)
 }
 
+// Menu is the menu to handle the all menus in bot
 type Menu interface {
 	Reset() Response
 	Process(message string) Response

@@ -1,4 +1,5 @@
-// Code generated for package bloodrage by go-bindata DO NOT EDIT. (@generated)
+// Code generated for package bloodrage by go-bindata DO NOT EDIT.
+
 // sources:
 // data/cards.yaml
 package bloodrage
@@ -193,8 +194,8 @@ type bintree struct {
 }
 
 var _bintree = &bintree{nil, map[string]*bintree{
-	"data": &bintree{nil, map[string]*bintree{
-		"cards.yaml": &bintree{dataCardsYaml, map[string]*bintree{}},
+	"data": {nil, map[string]*bintree{
+		"cards.yaml": {dataCardsYaml, map[string]*bintree{}},
 	}},
 }}
 
