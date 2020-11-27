@@ -3,7 +3,7 @@ WORKSPACE = $(ROOT)/workspace
 GO_BIN_DATA = $(WORKSPACE)/bin/go-bindata
 
 ## No need to change anything below this line (normally, unless you know what you are doing)
-EXECUTABLES = go
+EXECUTABLES = go install
 K := $(foreach exec,$(EXECUTABLES),\
         $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
 SPLIT = $(subst -, ,$@)
@@ -21,3 +21,9 @@ data-%:
 	cd $(ROOT)/internal/$(GAME) && $(GO_BIN_DATA) -pkg $(GAME) data/
 
 bin-data: data-bloodrage
+
+build:
+	go build -o $(ROOT)/bin/persianbgbot ./cmd/persianbgbot
+
+install: build
+	install $(ROOT)/bin/persianbgbot /usr/local/bin/persianbgbot
