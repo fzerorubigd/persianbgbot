@@ -59,7 +59,6 @@ type BloodRage struct {
 	Ages []menu.Item
 }
 
-
 // Caption returns the caption
 func (b *BloodRage) Caption() string {
 	return "Select one bloodrage age:"
