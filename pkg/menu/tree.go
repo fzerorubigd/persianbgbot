@@ -101,8 +101,10 @@ func (t *MemTree) buildMenu(filter string) telegram.Response {
 			t.start = 0
 			return t.buildMenu("")
 		}
-
-		return telegram.NewTextResponse(t.filtered[0].(Leaf).Message())
+		txt := t.filtered[0].(Leaf).Message()
+		topMenu := t.buildMenu("")
+		topMenu.SetText(txt)
+		return topMenu
 	}
 
 	if len(t.filtered) <= t.limit {

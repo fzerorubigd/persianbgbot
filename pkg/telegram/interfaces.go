@@ -5,20 +5,32 @@ type (
 		keys []string
 		text string
 	}
-	message string
+	message struct {
+		text string
+	}
 )
 
-func (m message) buttonText() string {
-	return string(m)
+func (m *message) buttonText() string {
+	return m.text
+}
+
+func (m *message) SetText(s string) {
+	m.text = s
 }
 
 func (b *button) buttonText() string {
 	return b.text
 }
 
+func (b *button) SetText(s string) {
+	b.text = s
+}
+
 // Response is a telegram response
 type Response interface {
 	buttonText() string
+
+	SetText(string)
 }
 
 type Menu interface {
@@ -36,5 +48,7 @@ func NewButtonResponse(text string, items ...string) Response {
 
 // NewTextResponse create a new text message
 func NewTextResponse(text string) Response {
-	return message(text)
+	return &message{
+		text: text,
+	}
 }
