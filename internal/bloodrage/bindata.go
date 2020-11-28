@@ -1,5 +1,4 @@
-// Code generated for package bloodrage by go-bindata DO NOT EDIT.
-
+// Code generated for package bloodrage by go-bindata DO NOT EDIT. (@generated)
 // sources:
 // data/cards.yaml
 package bloodrage
@@ -93,7 +92,7 @@ func dataCardsYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "data/cards.yaml", size: 24543, mode: os.FileMode(436), modTime: time.Unix(1606504996, 0)}
+	info := bindataFileInfo{name: "data/cards.yaml", size: 24543, mode: os.FileMode(420), modTime: time.Unix(1606509697, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -194,8 +193,8 @@ type bintree struct {
 }
 
 var _bintree = &bintree{nil, map[string]*bintree{
-	"data": {nil, map[string]*bintree{
-		"cards.yaml": {dataCardsYaml, map[string]*bintree{}},
+	"data": &bintree{nil, map[string]*bintree{
+		"cards.yaml": &bintree{dataCardsYaml, map[string]*bintree{}},
 	}},
 }}
 

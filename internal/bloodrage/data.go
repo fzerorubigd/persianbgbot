@@ -54,28 +54,28 @@ func (a *age) Load() []menu.Item {
 	return a.Cards
 }
 
-// BloodRage contains cards for bloodrage game
-type BloodRage struct {
+// bloodRage contains cards for bloodrage game
+type bloodRage struct {
 	Ages []menu.Item
 }
 
 // Caption returns the caption
-func (b *BloodRage) Caption() string {
+func (b *bloodRage) Caption() string {
 	return "Select one bloodrage age:"
 }
 
 // Index returns the index
-func (b *BloodRage) Index() string {
+func (b *bloodRage) Index() string {
 	return "Bloodrage"
 }
 
 // Load return cards inside it
-func (b *BloodRage) Load() []menu.Item {
+func (b *bloodRage) Load() []menu.Item {
 	return b.Ages
 }
 
-// LoadCards load bloodrage cards from bin data
-func LoadCards() (*BloodRage, error) {
+// loadCards load bloodrage cards from bin data
+func loadCards() (*bloodRage, error) {
 	fl, err := Asset("data/cards.yaml")
 	if err != nil {
 		return nil, errors.Wrap(err, "can not load the files from bin storage")
@@ -85,7 +85,7 @@ func LoadCards() (*BloodRage, error) {
 		return nil, errors.Wrap(err, "load yaml data failed")
 	}
 
-	b := &BloodRage{}
+	b := &bloodRage{}
 	for a := range result {
 		age := &age{
 			Name:  a,
@@ -103,7 +103,7 @@ func LoadCards() (*BloodRage, error) {
 }
 
 func init() {
-	b, err := LoadCards()
+	b, err := loadCards()
 	if err != nil {
 		panic("invalid data")
 	}
