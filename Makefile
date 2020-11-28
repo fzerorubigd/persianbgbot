@@ -20,7 +20,7 @@ version: $(GO_BIN_DATA)
 data-%: $(GO_BIN_DATA)
 	cd $(ROOT)/internal/$(GAME) && $(GO_BIN_DATA) -pkg $(GAME) data/
 
-bin-data: data-bloodrage data-terraforming
+bin-data: data-bloodrage data-terraforming data-tinytown
 
 build:
 	go build -o $(ROOT)/bin/persianbgbot ./cmd/persianbgbot

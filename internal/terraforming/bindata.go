@@ -1,5 +1,4 @@
-// Code generated for package terraforming by go-bindata DO NOT EDIT.
-
+// Code generated for package terraforming by go-bindata DO NOT EDIT. (@generated)
 // sources:
 // data/cards.yaml
 package terraforming

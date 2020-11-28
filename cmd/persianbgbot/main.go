@@ -11,6 +11,7 @@ import (
 
 	_ "github.com/fzerorubigd/persianbgbot/internal/bloodrage"
 	_ "github.com/fzerorubigd/persianbgbot/internal/terraforming"
+	_ "github.com/fzerorubigd/persianbgbot/internal/tinytown"
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
 	"github.com/fzerorubigd/persianbgbot/pkg/telegram"
 )
