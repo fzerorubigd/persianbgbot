@@ -70,7 +70,7 @@ func (t *memoryMenu) buildFilteredMenu(filter string) bool {
 
 func (t *memoryMenu) appendItems(parentItem, backItem, forwardItem bool, items ...string) telegram.Response {
 	if !t.showButton {
-		return telegram.NewTextResponse(t.caption, true)
+		return telegram.NewButtonResponse(t.caption, parent)
 	}
 	result := make([]string, 0, len(items)+3)
 	if parentItem {
