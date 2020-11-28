@@ -48,7 +48,7 @@ func (c *card) Message() string {
 %s
 <b>ترجمه اثر یکباره</b>
 %s
-`, c.OneTimeEnglish, c.OneTimeEnglish)
+`, c.OneTimeEnglish, c.OneTimePersian)
 	}
 
 	if c.ActionEnglish != "" {
@@ -114,10 +114,19 @@ func loadCards() (*terraformingMars, error) {
 	})
 
 	numSort := menu.NewSimpleNode("By Card Number", "Input the card number: ", false, num...)
-
-	return &terraformingMars{
+	tm := &terraformingMars{
 		items: []menu.Item{nameSort, numSort},
-	}, nil
+	}
+
+	tm.items = append(tm.items, menu.NewSimpleLeaf("About", `
+<b>Terraforming Mars Cards</b>
+<i>Work In Progress</i>
+I found the basic card translation in BGG (PDF format) by <b>Ali Nasery</b> (Instagram: @boardgamerboy) 
+I couldn't find this ID in instagram, so I have no confirmation from him so far.
+Some edit (not much, just few places) and converting to YAML by Forud Ghafouri
+`))
+
+	return tm, nil
 }
 
 func init() {
