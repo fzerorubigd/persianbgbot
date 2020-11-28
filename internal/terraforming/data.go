@@ -64,38 +64,24 @@ func (c *card) Message() string {
 	return text
 }
 
-type customIndexer struct {
-	index   string
-	caption string
-	items   []menu.Item
-}
-
-func (c *customIndexer) Index() string {
-	return c.index
-}
-
-func (c *customIndexer) Load() []menu.Item {
-	return c.items
-}
-
-func (c *customIndexer) Caption() string {
-	return c.caption
-}
-
 type terraformingMars struct {
 	items []menu.Item
 }
 
-func (t terraformingMars) Index() string {
+func (t *terraformingMars) Index() string {
 	return "Terraforming Mars"
 }
 
-func (t terraformingMars) Load() []menu.Item {
+func (t *terraformingMars) Load() []menu.Item {
 	return t.items
 }
 
-func (t terraformingMars) Caption() string {
+func (t *terraformingMars) Caption() string {
 	return "Choose the search method: "
+}
+
+func (t *terraformingMars) Button() bool {
+	return true
 }
 
 // loadCards load bloodrage cards from bin data
@@ -109,32 +95,28 @@ func loadCards() (*terraformingMars, error) {
 		return nil, errors.Wrap(err, "load yaml data failed")
 	}
 
-	nameSort := customIndexer{
-		index:   "By Name",
-		caption: "Search cards by name: ",
-		items:   nil,
-	}
+	var name []menu.Item
 	for i := range result {
-		nameSort.items = append(nameSort.items, &byName{result[i]})
+		name = append(name, &byName{result[i]})
 	}
-	sort.Slice(nameSort.items, func(i, j int) bool {
-		return strings.Compare(nameSort.items[i].Index(), nameSort.items[i].Index()) < 0
+	sort.Slice(name, func(i, j int) bool {
+		return strings.Compare(name[i].Index(), name[i].Index()) < 0
 	})
 
-	numSort := customIndexer{
-		index:   "By Card Number",
-		caption: "Search cards by number (You can type number): ",
-		items:   nil,
-	}
+	nameSort := menu.NewSimpleNode("By Name", "Search cards by name: ", true, name...)
+
+	var num []menu.Item
 	for i := range result {
-		numSort.items = append(numSort.items, &byNumber{result[i]})
+		num = append(num, &byNumber{result[i]})
 	}
-	sort.Slice(numSort.items, func(i, j int) bool {
-		return strings.Compare(numSort.items[i].Index(), numSort.items[i].Index()) < 0
+	sort.Slice(name, func(i, j int) bool {
+		return strings.Compare(num[i].Index(), num[i].Index()) < 0
 	})
+
+	numSort := menu.NewSimpleNode("By Card Number", "Input the card number: ", false, num...)
 
 	return &terraformingMars{
-		items: []menu.Item{&nameSort, &numSort},
+		items: []menu.Item{nameSort, numSort},
 	}, nil
 }
 

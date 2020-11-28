@@ -8,6 +8,7 @@ type simpleMenuItem struct {
 type simpleNode struct {
 	index   string
 	caption string
+	button  bool
 	leaf    []Item
 }
 
@@ -21,6 +22,10 @@ func (s *simpleNode) Load() []Item {
 
 func (s *simpleNode) Caption() string {
 	return s.caption
+}
+
+func (s *simpleNode) Button() bool {
+	return s.button
 }
 
 func (s *simpleMenuItem) Index() string {
@@ -40,10 +45,11 @@ func NewSimpleLeaf(index, text string) Leaf {
 }
 
 // NewSimpleNode is for creating simple node
-func NewSimpleNode(index, caption string, items ...Item) Node {
+func NewSimpleNode(index, caption string, button bool, items ...Item) Node {
 	return &simpleNode{
 		index:   index,
 		caption: caption,
+		button: button,
 		leaf:    items,
 	}
 }

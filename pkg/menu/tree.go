@@ -19,6 +19,8 @@ type Node interface {
 
 	Load() []Item
 	Caption() string
+
+	Button() bool
 }
 
 // Leaf is a leaf in menu
@@ -39,9 +41,10 @@ const (
 type memoryMenu struct {
 	root []Node
 
-	caption  string
-	filtered []Item
-	current  []Item
+	caption    string
+	filtered   []Item
+	current    []Item
+	showButton bool
 
 	start      int
 	limit      int
@@ -65,7 +68,10 @@ func (t *memoryMenu) buildFilteredMenu(filter string) bool {
 	return false
 }
 
-func appendItems(parentItem, backItem, forwardItem bool, text string, items ...string) telegram.Response {
+func (t *memoryMenu) appendItems(parentItem, backItem, forwardItem bool, items ...string) telegram.Response {
+	if !t.showButton {
+		return telegram.NewTextResponse(t.caption, true)
+	}
 	result := make([]string, 0, len(items)+3)
 	if parentItem {
 		result = append(result, parent)
@@ -81,7 +87,7 @@ func appendItems(parentItem, backItem, forwardItem bool, text string, items ...s
 		result = append(result, forward)
 	}
 
-	return telegram.NewButtonResponse(text, result...)
+	return telegram.NewButtonResponse(t.caption, result...)
 }
 
 func (t *memoryMenu) buildMenu(filter string) telegram.Response {
@@ -100,6 +106,7 @@ func (t *memoryMenu) buildMenu(filter string) telegram.Response {
 		if node, ok := t.filtered[0].(Node); ok {
 			t.root = append(t.root, node)
 			t.current = node.Load()
+			t.showButton = node.Button()
 			t.caption = node.Caption()
 			t.start = 0
 			return t.buildMenu("")
@@ -117,7 +124,7 @@ func (t *memoryMenu) buildMenu(filter string) telegram.Response {
 			items = append(items, t.filtered[i].Index())
 		}
 
-		return appendItems(len(t.root) > 1, false, false, t.caption, items...)
+		return t.appendItems(len(t.root) > 1, false, false, items...)
 	}
 
 	duplicate := make(map[string]bool, len(t.filtered))
@@ -135,21 +142,22 @@ func (t *memoryMenu) buildMenu(filter string) telegram.Response {
 	}
 	sort.Strings(items)
 	if len(items) <= t.limit {
-		return appendItems(len(t.root) > 1, false, false, t.caption, items...)
+		return t.appendItems(len(t.root) > 1, false, false, items...)
 	}
 
 	if t.start >= len(items) {
 		t.start = 0
 	}
 	if t.start+t.limit < len(items) {
-		return appendItems(len(t.root) > 1, t.start > 0, true, t.caption, items[t.start:t.start+t.limit]...)
+		return t.appendItems(len(t.root) > 1, t.start > 0, true, items[t.start:t.start+t.limit]...)
 	}
-	return appendItems(len(t.root) > 1, t.start > 0, false, t.caption, items[t.start:]...)
+	return t.appendItems(len(t.root) > 1, t.start > 0, false, items[t.start:]...)
 }
 
 func (t *memoryMenu) Reset() telegram.Response {
 	t.root = t.root[:1]
 	t.current = t.root[0].Load()
+	t.showButton = t.root[0].Button()
 	t.caption = t.root[0].Caption()
 
 	return t.buildMenu("")
@@ -177,6 +185,7 @@ func (t *memoryMenu) Process(message string) telegram.Response {
 		if len(t.root) > 1 {
 			t.root = t.root[:len(t.root)-1]
 			t.current = t.root[len(t.root)-1].Load()
+			t.showButton = t.root[len(t.root)-1].Button()
 			t.caption = t.root[len(t.root)-1].Caption()
 			return t.buildMenu("")
 		}
@@ -199,6 +208,10 @@ func (r *rootMenu) Load() []Item {
 
 func (r *rootMenu) Caption() string {
 	return "Select the game"
+}
+
+func (r *rootMenu) Button() bool {
+	return true
 }
 
 // CreateMemoryMenu creates in memory app

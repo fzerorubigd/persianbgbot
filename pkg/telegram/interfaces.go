@@ -6,7 +6,8 @@ type (
 		text string
 	}
 	message struct {
-		text string
+		hideButton bool
+		text       string
 	}
 )
 
@@ -48,8 +49,9 @@ func NewButtonResponse(text string, items ...string) Response {
 }
 
 // NewTextResponse create a new text message
-func NewTextResponse(text string) Response {
+func NewTextResponse(text string, hideButton bool) Response {
 	return &message{
-		text: text,
+		hideButton: hideButton,
+		text:       text,
 	}
 }

@@ -54,6 +54,10 @@ func (a *age) Load() []menu.Item {
 	return a.Cards
 }
 
+func (a *age) Button() bool {
+	return true
+}
+
 // bloodRage contains cards for bloodrage game
 type bloodRage struct {
 	Ages []menu.Item
@@ -72,6 +76,10 @@ func (b *bloodRage) Index() string {
 // Load return cards inside it
 func (b *bloodRage) Load() []menu.Item {
 	return b.Ages
+}
+
+func (b *bloodRage) Button() bool {
+	return true
 }
 
 // loadCards load bloodrage cards from bin data

@@ -52,6 +52,9 @@ func sendMessage(chatID int64, resp Response) ([]tgbotapi.MessageConfig, error) 
 	msg.ParseMode = "html"
 	switch t := resp.(type) {
 	case *message:
+		if t.hideButton {
+			msg.ReplyMarkup = tgbotapi.NewRemoveKeyboard(true)
+		}
 		return []tgbotapi.MessageConfig{msg}, nil
 	case *button:
 		msg.ReplyMarkup = createKeyboard(t.keys, 3)
