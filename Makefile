@@ -11,7 +11,7 @@ GAME = $(word 2, $(SPLIT))
 
 
 $(GO_BIN_DATA):
-	cd $(WORKSPACE) && go build github.com/go-bindata/go-bindata/go-bindata
+	cd $(WORKSPACE) && go build github.com/kevinburke/go-bindata/go-bindata
 	mv $(ROOT)/workspace/go-bindata $@
 
 version: $(GO_BIN_DATA)

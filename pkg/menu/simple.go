@@ -49,7 +49,7 @@ func NewSimpleNode(index, caption string, button bool, items ...Item) Node {
 	return &simpleNode{
 		index:   index,
 		caption: caption,
-		button: button,
+		button:  button,
 		leaf:    items,
 	}
 }
