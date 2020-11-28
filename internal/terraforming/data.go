@@ -12,8 +12,8 @@ import (
 // card is a single card in game
 type card struct {
 	Name           string `yaml:"Name"`
-	Number         int    `yaml:"Number"`
-	Cost           int    `yaml:"Cost"`
+	Number         string `yaml:"Number"`
+	Cost           string `yaml:"Cost"`
 	CardType       string `yaml:"CardType"`
 	Deck           string `yaml:"Deck"`
 	ActionPersian  string `yaml:"Action_Persian"`
@@ -35,13 +35,13 @@ func (n *byName) Index() string {
 }
 
 func (n *byNumber) Index() string {
-	return fmt.Sprint(n.Number)
+	return n.Number
 }
 
 func (c *card) Message() string {
 	text := fmt.Sprintf(`
 <b>%s: <i>%s</i></b>
-<b>هزینه</b>: %d
+<b>هزینه</b>: %s
 `, c.CardType, c.Name, c.Cost)
 	if c.OneTimeEnglish != "" {
 		text += fmt.Sprintf(`<b>متن اصلی اثر یک باره</b>:
@@ -60,7 +60,7 @@ func (c *card) Message() string {
 	}
 
 	text += fmt.Sprintf(`
-<u>#%d</u> %s`, c.Number, c.Deck)
+<u>#%s</u> %s`, c.Number, c.Deck)
 	return text
 }
 
@@ -107,9 +107,11 @@ func loadCards() (*terraformingMars, error) {
 
 	var num []menu.Item
 	for i := range result {
-		num = append(num, &byNumber{result[i]})
+		if result[i].Number != "" {
+			num = append(num, &byNumber{result[i]})
+		}
 	}
-	sort.Slice(name, func(i, j int) bool {
+	sort.Slice(num, func(i, j int) bool {
 		return strings.Compare(num[i].Index(), num[i].Index()) < 0
 	})
 

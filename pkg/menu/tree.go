@@ -31,10 +31,10 @@ type Leaf interface {
 }
 
 const (
-	parent  = "⤴️"
-	back    = "⬅️️"
-	forward = "➡️"
-	reset   = "🤷🏻‍"
+	parentButton  = "⤴️"
+	backButton    = "⬅️️"
+	forwardButton = "➡️"
+	resetButton   = "🤷🏻‍"
 )
 
 // memoryMenu is a in memory tree of states, NOT CONCURRENT SAFE
@@ -70,21 +70,21 @@ func (t *memoryMenu) buildFilteredMenu(filter string) bool {
 
 func (t *memoryMenu) appendItems(parentItem, backItem, forwardItem bool, items ...string) telegram.Response {
 	if !t.showButton {
-		return telegram.NewButtonResponse(t.caption, parent)
+		return telegram.NewButtonResponse(t.caption, parentButton)
 	}
 	result := make([]string, 0, len(items)+3)
 	if parentItem {
-		result = append(result, parent)
+		result = append(result, parentButton)
 	}
 
 	result = append(result, items...)
 
 	if backItem {
-		result = append(result, back)
+		result = append(result, backButton)
 	}
 
 	if forwardItem {
-		result = append(result, forward)
+		result = append(result, forwardButton)
 	}
 
 	return telegram.NewButtonResponse(t.caption, result...)
@@ -97,7 +97,7 @@ func (t *memoryMenu) buildMenu(filter string) telegram.Response {
 
 	final := t.buildFilteredMenu(filter)
 	if len(t.filtered) == 0 {
-		return telegram.NewButtonResponse(reset, reset)
+		return telegram.NewButtonResponse(resetButton, resetButton)
 	}
 
 	t.lastFilter = filter
@@ -164,21 +164,21 @@ func (t *memoryMenu) Reset() telegram.Response {
 }
 
 func (t *memoryMenu) Process(message string) telegram.Response {
-	if message == reset {
+	if message == resetButton {
 		return t.buildMenu("")
 	}
 
-	if message == back {
+	if message == backButton {
 		t.start -= t.limit
 		return t.buildMenu(t.lastFilter)
 	}
 
-	if message == forward {
+	if message == forwardButton {
 		t.start += t.limit
 		return t.buildMenu(t.lastFilter)
 	}
 
-	if message == parent {
+	if message == parentButton {
 		if t.lastFilter != "" {
 			return t.buildMenu("")
 		}
