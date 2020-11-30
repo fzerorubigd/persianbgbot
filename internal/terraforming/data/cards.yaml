@@ -14,7 +14,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: شما باید تولید تیتانیوم داشته باشید، تولید تیتانیوم هر بازیکن دیگری
+    را یک واحد کاهش دهید و تولید تیتانیوم خود را یک واحد افزاریش دهید.
   Action_English: ''
   OneTime_English: Requires that you have titanium production. Decrease any titanium
     production 1 step and increase your own 1 step.
@@ -135,7 +136,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: یک فولاد بدهید و ۵ مگا کردیت بگیرید'
-  OneTime_Persian: ''
+  OneTime_Persian: تولید تیتانیوم خود را ۲ واحد افزایش دهید.
   Action_English: 'Action: Spend 1 steel to gain 5 MC'
   OneTime_English: Increase your titanium production 1 step.
 - Name: Development Center
@@ -284,7 +285,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: نیازمند پنج تگ دانش برای بازی شدن است.
   Action_English: ''
   OneTime_English: Requires 5 science tags.
 - Name: Security Fleet
@@ -294,7 +295,7 @@
   Deck: Corporate
   Action_Persian: 'عمل: یک تیتانیوم مصرف کنید تا یک ریسورس جنگجو به این کارت اضافه
     کنید.'
-  OneTime_Persian: ''
+  OneTime_Persian: یک امتیاز به ازای هر جنگجو که روی این کارت است
   Action_English: 'Action: Spend 1 titanium to add 1 fighter resource to this card.'
   OneTime_English: 1 VP for each fighter resource on this card.
 - Name: Cupola City
@@ -484,7 +485,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: برای بازی شدن نیازمند سه تگ دانش است. تولید انرژی و مگاکردیت خود
+    را هر کدام یک واحد بالا ببرید
   Action_English: ''
   OneTime_English: Requires 3 science tags. Increase your energy production and your
     MC production 1 step each.
@@ -514,7 +516,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: یک میکروب به این کارت اضافه کنید .'
-  OneTime_Persian: ''
+  OneTime_Persian: یک امتیاز به ازای هر چهار میکروب روی این کارت.
   Action_English: 'Action: Add 1 microbe to this card.'
   OneTime_English: 1 VP per 4 microbes on this card.
 - Name: Virus
@@ -523,7 +525,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تا دو حیوان یا پنج گیاه را از هر بازیکنی حذف کنید.
   Action_English: ''
   OneTime_English: Remove up to 2 animals or 5 plants from any player.
 - Name: Miranda Resort
@@ -532,7 +534,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید مگاکردیت حود را یک واحد به ازای هر تگ زمین که دارید بالا
+    ببرید
   Action_English: ''
   OneTime_English: Increase your MC production 1 step for each Earth tag you have.
 - Name: Fish
@@ -585,7 +588,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید فولاد خود را یک واحد بالا ببرید.
   Action_English: ''
   OneTime_English: Increase your steel production 1 step.
 - Name: Vesta Shipyard
@@ -594,7 +597,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید تیتانیوم خود را یک واحد بالا ببرید
   Action_English: ''
   OneTime_English: Increase your titanium production 1 step.
 - Name: Beam From a Thorium Asteroid
@@ -639,7 +642,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: شما باید تولید فولاد داشته باشید، تولید فولاد هر بازیکن دیگری را
+    یک واحد کاهش دهید و تولید فولاد خود را یک واحد افزاریش دهید.
   Action_English: ''
   OneTime_English: Requires that you have steel production. Decrease any steel production
     1 step and increase your own 1 step
@@ -649,7 +653,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: پنج فولاد بگیرید
   Action_English: ''
   OneTime_English: Gain 5 steel.
 - Name: Mining Expedition
@@ -679,7 +683,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید انرژی خود را یک واحد کاهش و تولید فولاد خود را ۳ واحد افزایش
+    دهید.
   Action_English: ''
   OneTime_English: Decrease your energy production 1 step and increase your steel
     production 2 steps.
@@ -689,7 +694,8 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: نشانگر خود را روی یک ناحیه غیر از نواحی رزرو شده بگذارید. فقط شما
+    میتوانید یک تایل اینجا بگذارید.
   Action_English: ''
   OneTime_English: Place your marker on a non-reserved area. Only you may place a
     tile here
@@ -710,7 +716,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: 'تولید مگا کردیت خود را ۲ واحد افزایش دهید. '
   Action_English: ''
   OneTime_English: Increase your MC production 2  steps.
 - Name: Electro Catapult
@@ -719,7 +725,8 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: یک گیاه یا یک فولاد مصرف کنید و ۷ مگاکردیت بگیرید.'
-  OneTime_Persian: ''
+  OneTime_Persian: اکسیژن باید حداکثر ۸ درصد (یا کمتر) باشد. تولید انرژی خود را یک
+    واحد کاهش دهید
   Action_English: 'Action: Spend 1 plant or 1 steel to gain 7 MC'
   OneTime_English: Oxygen must be 8% or less. Decrease your energy production 1 step.
 - Name: Earth Catapult
@@ -851,7 +858,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: 'تولید مگا کردیت خود را ۳ واحد افزایش دهید. '
   Action_English: ''
   OneTime_English: Increase your MC production 3 steps.
 - Name: Giant Space Mirror
@@ -888,7 +895,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: باکس تولید یکی از کارتهای ساختمانی خود را دو برابر کنید.
   Action_English: ''
   OneTime_English: Duplicate only the production box of one of your building cards.
 - Name: Grass
@@ -970,7 +977,7 @@
   Deck: Corporate
   Action_Persian: 'اثر: وقتی یک کارت فضا بازی میکنید دو مگاکردیت کمتر برای آن پرداخت
     کنید.'
-  OneTime_Persian: ''
+  OneTime_Persian: نیازمند ۵ تگ دانش است، تولید انرژی خود را ۶ واحد افزایش دهید.
   Action_English: 'Effect: When you play a space card, you pay 2 MC less for it.'
   OneTime_English: Requires 5 science tags. Increase your energy production 6 steps.
 - Name: Physics Complex
@@ -979,7 +986,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: ۶ انرژی مصرف کنید تا یک منبع دانش به این کارت اضافه کنید.'
-  OneTime_Persian: ''
+  OneTime_Persian: دو امتیاز به ازای هر منبع دانش روی این کارت.
   Action_English: 'Action: Spend 6 energy to add a science resource to this card.'
   OneTime_English: 2 VP for each science resource on this card.
 - Name: Greenhouses
@@ -1007,7 +1014,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید گرمای خود را دو واحد کاهش دهید و تولید مگاکردیت خود را سه
+    واحد افزایش دهید.
   Action_English: ''
   OneTime_English: Decrease your heat production 2 steps and increase your MC production
     3 steps.
@@ -1017,7 +1025,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید مگا کردیت خود را یک واخد به ازای هر تگ فضایی که رقبای شما
+    دارند، افزایش دهید.
   Action_English: ''
   OneTime_English: Increase your MC production 1 step for each space tag your OPPONENTS
     have.
@@ -1090,7 +1099,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید مگاکردیت حود را سه واحد افزایش دهید
   Action_English: ''
   OneTime_English: Increase your MC production 3 steps.
 - Name: Media Archives
@@ -1099,7 +1108,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: یک مگاکردیت به ازای هر رویدادی که تا الان توسط هر بازیکنی بازی
+    شده بگیرید
   Action_English: ''
   OneTime_English: Gain 1 MC for each event EVER PLAYED by all players
 - Name: Open City
@@ -1129,7 +1139,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: کارت بالایی را ببینید و یا آنرا بخرید یا دیسکارد کنید'
-  OneTime_Persian: ''
+  OneTime_Persian: تولید مگاکردیت خود را یک واحد کاهش دهید.
   Action_English: 'Action: Look at the top card and either buy it or discard it'
   OneTime_English: Decrease your MC production 1 step.
 - Name: Business Contacts
@@ -1138,7 +1148,8 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: چهار کارت بالای دک را ببینید، دو تای آن را به دتس خودتان اضفه کنید
+    و دوتای آن را بسوزانید.
   Action_English: ''
   OneTime_English: Look at the top 4 cards from the deck. Take 2 of them into hand
     and discard the other 2
@@ -1148,7 +1159,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: درجه قابل سکونت سازی خودتان را دو واحد بالا ببرید.
   Action_English: ''
   OneTime_English: Raise your terraform rating 2 steps.
 - Name: Solar Power
@@ -1237,7 +1248,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تا سه تیتانیوم، یا چهار فولاد، یا ۷ مگاکردیت از هر بازیکن حذف کنید.
   Action_English: ''
   OneTime_English: Remove up to 3 titanium from any player, or 4 steel, or 7 MC.
 - Name: Moss
@@ -1266,7 +1277,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: 'تا دو فولاد یا سه مگاکردیت از هر بازیکنی بدزدید. '
   Action_English: ''
   OneTime_English: Steal up to 2 steel, or 3MC from any player.
 - Name: Hackers
@@ -1538,7 +1549,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'اثر: وقتی یک کارت بازی میکنید دو مگاکردیت کمتر برای آن پرداخت کنید.'
-  OneTime_Persian: ''
+  OneTime_Persian: نیازمند ۷ تگ دانش است
   Action_English: 'Effect: when you play a card, you pay 2 MC less for it.'
   OneTime_English: Requires 7 science tags.
 - Name: Investment Loan
@@ -1579,7 +1590,7 @@
   Deck: Corporate
   Action_Persian: 'عمل: ۸ حرارت مصرف کنید تا درجه قابل سکونت سازی را یک واحد بالا
     ببرید'
-  OneTime_Persian: ''
+  OneTime_Persian: نیازمند حداقل صغر درجه سانتی‌گراد برای بازی شدن است
   Action_English: 'Action: Spend 8 heat to increase your terraforming rating 1 step.'
   OneTime_English: Requires 0°C or warmer.
 - Name: Designed Microorganisms
@@ -1777,8 +1788,9 @@
   Cost: '5'
   CardType: Active
   Deck: Corporate
-  Action_Persian: "[اثر]: رقبا نمی‌توانند [گیاه، حیوانات  یا میکروبهای] شما را حذف
-    کند. "
+  Action_Persian: |-
+    [اثر]: رقبا نمی‌توانند [گیاه، حیوانات  یا میکروبهای] شما را حذف
+      کنند.
   OneTime_Persian: ''
   Action_English: "[Effect: ]Opponents may not remove your [plants, animals or microbes]"
   OneTime_English: ''
@@ -2021,7 +2033,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: یک کارت بکشید
   Action_English: ''
   OneTime_English: Draw 1 card.
 - Name: Terraforming Ganymede
@@ -2100,7 +2112,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: دو کارت بکشید.
   Action_English: ''
   OneTime_English: Draw 2 cards.
 - Name: Rad-Chem Factory
@@ -2152,7 +2164,7 @@
   Deck: Basic
   Action_Persian: 'اثر: بعد از اینکه کارت پروژه استاندارد با قیمت ۲۰ مگاکردیت یا بیشتر
     را بازی کنید، ۴ مگاکردیت میگیرید.'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با ۵۷ مگاکردیت شروع میکنید
   Action_English: 'Effect: After you pay for a card or standard project with a basic
     cost of 20 MC or more, you gain 4 MC.'
   OneTime_English: You start with 57 MC.
@@ -2162,7 +2174,7 @@
   CardType: Corporation
   Deck: Basic
   Action_Persian: 'اثر: شما میتوانید ۷ گیاه به جای ۸ تا بدهید برای ساخت یک فضای سبز'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با دو واحد تولید گیاه و سه گیاه و ۳۶ مگاکردیت شروع میکنید
   Action_English: 'Effect: You may always pay 7 plants, instead of 8, to place 1 greenery.'
   OneTime_English: You start with 2 plant production, 3 plants, and 36 MC.
 - Name: Helion
@@ -2172,7 +2184,7 @@
   Deck: Basic
   Action_Persian: 'اثر: شما میتوانید حرارت را به جای مگاکردیت استفاه کنید، ولی نمیتوانید
     مگاکردیت را به جای حرارت استفاده کنید'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با سه واحد تولید حرارت و ۴۲ مگاکردیت شروع میکنید
   Action_English: 'Effect: You may use heat as MC. You may not use MC as heat.'
   OneTime_English: You start with 3 heat production and 42 MC.
 - Name: Interplanetary Cinematics
@@ -2181,7 +2193,7 @@
   CardType: Corporation
   Deck: Basic
   Action_Persian: 'اثر: هر زمان که یک کارت رویداد را بازی کنید دو مگاکردیت میگیرید'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با ۲۰ استیل و ۳۰ مگاکردیت شروع میکنید
   Action_English: 'Effect: Each time you play an event, you gain 2 MC.'
   OneTime_English: You start with 20 steel and 30 MC.
 - Name: Inventrix
@@ -2191,7 +2203,7 @@
   Deck: Basic
   Action_Persian: 'اثر: پیش نیاز درجه حرارت، اکسیژن و اقیانوس دو واحد بیشتر یا دو
     واحد کمتر هستند، برای هرکدام انتخاب با شماست'
-  OneTime_Persian: ''
+  OneTime_Persian: به عنوان اولین اکشن بازی سه کارت بکشید و با ۴۵ مگاکردیت شروع کنید
   Action_English: 'Effect: Your temperature, oxygen, and ocean requirements are +2
     or -2 steps, your choice in each case.'
   OneTime_English: As your first action in the game, draw 3 cards. Start with 45 MC.
@@ -2215,7 +2227,7 @@
   CardType: Corporation
   Deck: Basic
   Action_Persian: 'اثر: هر تیتانیوم شما یک مگاکردیت بیشتر ارزش دارد.'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با ۱۰ تیتانیوم و ۲۳ مگاکردیت شروع میکنید
   Action_English: 'Effect: Your titanium resources are each worth 1 MC extra.'
   OneTime_English: You start with 10 titanium and 23 MC
 - Name: Tharsis Republic
@@ -2225,7 +2237,8 @@
   Deck: Basic
   Action_Persian: 'اثر: هر زمان که یک تایل شهر بر روی مریخ گذاشته می‌شود، تولید مگاکردیت
     خودتان را یک واحد بالا ببرید، وقتی شما این تایل را بگذارید، سه مگاکردیت بگیرید.'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با ۴۰ مگاکردیت شروع میکنید. به عنوان اولین اکشنتان در بازی،
+    یک تایل شهر بگذارید.
   Action_English: 'Effect: When any city tile is placed ON MARS, increase your MC
     production 1 step. When you place a city tile, gain 3 MC.'
   OneTime_English: You start with 40 MC. As your first action in the game, place a
@@ -2237,7 +2250,7 @@
   Deck: Basic
   Action_Persian: 'اثر: وقتی یک کارت انرژی بازی میکنید یا پروژه استاندارد نیروگاه
     را بازی می‌کنید، سه مگاکردیت کمتر پرداخت کنید.'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با یک تولید انرژی و ۴۸ مگاکردیت شروع میکنید
   Action_English: 'Effect: When playing a power card OR THE STANDARD PROJECT POWER
     PLANT, you pay 3 MC less for it.'
   OneTime_English: You start with 1 energy production and 48 MC.
@@ -2248,7 +2261,7 @@
   Deck: Basic
   Action_Persian: 'عمل: اگر درجه قابل سکونت سازی برای این جنریشن بالا رفت، شما می‌توانید
     سه مگاکردیت بدهید و آنرا یک درجه بالاتر ببرید.'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با ۴۰ مگاکردیت شروع میکنید
   Action_English: 'Action: If your Terraform Rating was raised this generation, you
     may pay 3 MC to raise it 1 step more.'
   OneTime_English: You start with 40 MC.
@@ -2259,7 +2272,7 @@
   Deck: Corporate
   Action_Persian: 'اثر: هر زمان که یک کارت با تگ مشتری بازی شود، از جمله همین کارت،
     تولید مگاکردیت خودتان را یکی بالا ببرید'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با یک تولید تیتانیوم و ۴۲ مگاکردیت شروع میکنید
   Action_English: 'Effect: Each time any Jovian tag is put into play, including this,
     increase your MC production 1 step.'
   OneTime_English: You start with 1 titanium production and 42 MC.
@@ -2270,6 +2283,6 @@
   Deck: Corporate
   Action_Persian: 'اثر: وقتی یک کارت زمین بازی میکنید، ۳ مگاکردیت کمتر برای آن پرداخت
     کنید.'
-  OneTime_Persian: ''
+  OneTime_Persian: شما با ۶۰ مگاکردیت شروع میکنید
   Action_English: 'Effect: When playing an Earth card, you pay 3 MC less for it.'
   OneTime_English: You start with 60 MC.
