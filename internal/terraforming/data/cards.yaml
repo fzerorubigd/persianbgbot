@@ -370,8 +370,8 @@
   CardType: Active
   Deck: Basic
   Action_Persian: 'عمل: از یک کارت دیگر یک میکروب حذف کرده و به این کارت اضافه کنید.'
-  OneTime_Persian: " برای بازی شدن نیازمند حداقل ۴ درصد اکسیژن است. به ازای هر ۲ میکروب
-    روی این کارت، یک امتیاز دارد."
+  OneTime_Persian: برای بازی شدن نیازمند حداقل ۴ درصد اکسیژن است. به ازای هر ۲ میکروب
+    روی این کارت، یک امتیاز دارد.
   Action_English: 'Action: Remove 1 microbe from any card to add 1 to this card.'
   OneTime_English: Requires 4% oxygen. 1 VP per 2 microbes on this card.
 - Name: Release of Inert Gases
@@ -400,7 +400,7 @@
   Cost: '8'
   CardType: Active
   Deck: Basic
-  Action_Persian: 'اثر: هر زمانی هر بازیکنی تایل شهر بگذارد، ۲ مگا کردیت بگیرید. '
+  Action_Persian: 'اثر: هر زمانی هر بازیکنی تایل شهر بگذارد، ۲ مگا کردیت بگیرید.'
   OneTime_Persian: ''
   Action_English: 'Effect: When any city tile is placed, gain 2 MC'
   OneTime_English: ''
@@ -565,8 +565,8 @@
   CardType: Active
   Deck: Basic
   Action_Persian: 'عمل: یک حیوان به این کارت اضافه کنید..'
-  OneTime_Persian: " برای بازی شدن نیازمند حداقل ۶ درصد اکسیژن است. به ازای هر ۲ حیوان
-    روی این کارت، یک امتیاز دارد. تولید گیاه یک بازیکن را یک واحد کاهش دهید"
+  OneTime_Persian: برای بازی شدن نیازمند حداقل ۶ درصد اکسیژن است. به ازای هر ۲ حیوان
+    روی این کارت، یک امتیاز دارد. تولید گیاه یک بازیکن را یک واحد کاهش دهید
   Action_English: 'Action: Add 1 animal to this card.'
   OneTime_English: Requires 6% oxygen. Decrease any plant production 1 step. 1 VP
     per 2 animals on this card.
@@ -716,7 +716,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: 'تولید مگا کردیت خود را ۲ واحد افزایش دهید. '
+  OneTime_Persian: تولید مگا کردیت خود را ۲ واحد افزایش دهید.
   Action_English: ''
   OneTime_English: Increase your MC production 2  steps.
 - Name: Electro Catapult
@@ -766,7 +766,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'اثر: وقتی تگ دانش را بازی میکنید (از جمله این کارت) میتوانید یک
-    کارت از دست خودتان را دیسکارد کنید و یک کارت جدید بکشید.'
+    کارت از دست خودتان را بسوزانید و یک کارت جدید بکشید.'
   OneTime_Persian: ''
   Action_English: 'Effect: When you play a science tag, including this, you may discard
     a card from hand to draw a card.'
@@ -858,7 +858,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: 'تولید مگا کردیت خود را ۳ واحد افزایش دهید. '
+  OneTime_Persian: تولید مگا کردیت خود را ۳ واحد افزایش دهید.
   Action_English: ''
   OneTime_English: Increase your MC production 3 steps.
 - Name: Giant Space Mirror
@@ -937,7 +937,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: 'به عنوان دو کارت دانش بازی شده حساب می‌شود. دو کارت بکشید '
   Action_English: ''
   OneTime_English: Counts as playing 2 science cards. Draw 2 cards.
 - Name: Gene Repair
@@ -1099,7 +1099,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: تولید مگاکردیت حود را سه واحد افزایش دهید
+  OneTime_Persian: تولید مگاکردیت خود را سه واحد افزایش دهید
   Action_English: ''
   OneTime_English: Increase your MC production 3 steps.
 - Name: Media Archives
@@ -1138,7 +1138,7 @@
   Cost: '4'
   CardType: Active
   Deck: Corporate
-  Action_Persian: 'عمل: کارت بالایی را ببینید و یا آنرا بخرید یا دیسکارد کنید'
+  Action_Persian: 'عمل: کارت بالایی را ببینید و یا آنرا بخرید یا بسوزانید'
   OneTime_Persian: تولید مگاکردیت خود را یک واحد کاهش دهید.
   Action_English: 'Action: Look at the top card and either buy it or discard it'
   OneTime_English: Decrease your MC production 1 step.
@@ -1277,7 +1277,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: 'تا دو فولاد یا سه مگاکردیت از هر بازیکنی بدزدید. '
+  OneTime_Persian: تا دو فولاد یا سه مگاکردیت از هر بازیکنی بدزدید.
   Action_English: ''
   OneTime_English: Steal up to 2 steel, or 3MC from any player.
 - Name: Hackers
@@ -1317,9 +1317,9 @@
   Deck: Basic
   Action_Persian: 'اثر: هر زمانی کارتی با تگ حیوان یا گیاه بازی کردید (از جمله این
     کارت)، یک حیوان به این کارت اضافه کنید.'
-  OneTime_Persian: " برای بازی شدن نیازمند این است که شما حداقل یک تایل فضای سبز داشته
+  OneTime_Persian: برای بازی شدن نیازمند این است که شما حداقل یک تایل فضای سبز داشته
     باشید. به ازای هر ۲ حیوان روی این کارت، یک امتیاز دارد. تایل مشخص شده را در کنار
-    یک تایل فضای سبز بگذارید."
+    یک تایل فضای سبز بگذارید.
   Action_English: 'Effect: When you play an animal or a plant tag (including these
     2), add an animal to this card.'
   OneTime_English: Requires that you have a greenery tile. Place [the Ecological Zone]
@@ -1475,8 +1475,8 @@
   CardType: Event
   Deck: Basic
   Action_Persian: ''
-  OneTime_Persian: ۲ امتیاز دارد. یک تایل اقیانوس بگذارید. ۲ کارت بردارید. ۵ گیاه
-    بگیرید یا ۴ حیوان به یک کارت دیگر اضافه کنید.
+  OneTime_Persian: " یک تایل اقیانوس بگذارید. ۲ کارت بردارید. ۵ گیاه بگیرید یا ۴ حیوان
+    به یک کارت دیگر اضافه کنید."
   Action_English: ''
   OneTime_English: Place an ocean tile and draw 2 cards. Gain 5 plants, or add 4 animals
     to ANOTHER card.
@@ -1486,7 +1486,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: تولید تیتانیوم خود را یک واحد افزایش دهید.
   Action_English: ''
   OneTime_English: Increase your titanium production 1 step.
 - Name: Tectonic Stress Power
@@ -1540,7 +1540,7 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: یک منبع به کارتی که یک حداقل یک منبع روی آن دارد.
   Action_English: ''
   OneTime_English: Add 1 resource to a card with at least 1 resource on it.
 - Name: Anti-Gravity Technology
@@ -1590,7 +1590,7 @@
   Deck: Corporate
   Action_Persian: 'عمل: ۸ حرارت مصرف کنید تا درجه قابل سکونت سازی را یک واحد بالا
     ببرید'
-  OneTime_Persian: نیازمند حداقل صغر درجه سانتی‌گراد برای بازی شدن است
+  OneTime_Persian: نیازمند حداقل صفر درجه سانتی‌گراد برای بازی شدن است
   Action_English: 'Action: Spend 8 heat to increase your terraforming rating 1 step.'
   OneTime_English: Requires 0°C or warmer.
 - Name: Designed Microorganisms
@@ -1906,9 +1906,9 @@
   CardType: Active
   Deck: Basic
   Action_Persian: 'عمل: یک حیوان به این کارت اضافه کنید.'
-  OneTime_Persian: " برای بازی شدن نیازمند حداقل ۹ درصد اکسیژن است. به ازای هر حیوان
+  OneTime_Persian: برای بازی شدن نیازمند حداقل ۹ درصد اکسیژن است. به ازای هر حیوان
     روی این کارت، یک امتیاز دارد. تولید گیاه خود را یک واحد کاهش و تولید مگا کردیت
-    خود را ۲ واحد افزایش دهید."
+    خود را ۲ واحد افزایش دهید.
   Action_English: 'Action: Add 1 animal to this card.'
   OneTime_English: Requires 9% oxygen. Decrease your plant production 1 step and increase
     your MC production 2 steps. 1 VP for each animal on this card.
@@ -1919,7 +1919,7 @@
   Deck: Corporate
   Action_Persian: 'اثر: وقتی یک کارت با تگ دانش بازی می‌کنید (از جمله این کارت) یا
     یک منبع دانش به این کارت اضافه کنید یا یک منبع دانش از این کارت حذف کنید و یک
-    کارت جدید بکشید. '
+    کارت جدید بکشید.'
   OneTime_Persian: ''
   Action_English: 'Effect: When you play a science tag, including this, either add
     a science resource to this card, or remove a science resource from this card to
@@ -1931,7 +1931,7 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: 'نیازمند دو شهر در بازی است. تولید مگاکردیت خود را یکی بالا ببرید. '
   Action_English: ''
   OneTime_English: Requires 2 cities in play. Increase your MC production 1 step.
 - Name: Aquifer Pumping
@@ -1994,7 +1994,8 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: سه کارت بالایی را ببینید، یکی را به دست خود اضافه کنید و دو تا
+    را بسوزانید.
   Action_English: ''
   OneTime_English: Look at the top 3 cards from the deck. Take 1 of them into hand
     and discard the other 2
@@ -2024,7 +2025,8 @@
   CardType: Event
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: برای کارت بعدی که در این نسل بازی میکنید هشت مگاکردیت کمتر هزینه
+    کنید
   Action_English: ''
   OneTime_English: The next card you play this generation costs 8MC less.
 - Name: Lagrange Observatory
@@ -2042,7 +2044,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: درجه قابل سکونت سازی خودتان را به ازای هر تگ مشتری(از جمله این
+    کارت) یک واحد بالا ببرید.
   Action_English: ''
   OneTime_English: Raise your TR 1 step for each Jovian tag you have, including this.
 - Name: Immigration Shuttles
@@ -2062,7 +2065,7 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: دو مگاکردیت بدهید و یک کارت بکشید'
-  OneTime_Persian: ''
+  OneTime_Persian: تایل [the restricted area] را بگذارید.
   Action_English: 'Action: Spend 2MC to draw a card.'
   OneTime_English: Place [the restricted area] tile.
 - Name: Immigrant City
@@ -2143,7 +2146,8 @@
   CardType: Automated
   Deck: Corporate
   Action_Persian: ''
-  OneTime_Persian: ''
+  OneTime_Persian: به ازای هر دو کارت با تگ ساختمان، از جمله این کارت، تولید مگاکردیت
+    خود را یک واحد بالا ببرید
   Action_English: ''
   OneTime_English: Increase your MC production 1 step for every 2 building tags you
     have, including this.
@@ -2153,7 +2157,8 @@
   CardType: Active
   Deck: Corporate
   Action_Persian: 'عمل: دو کارت بکشید'
-  OneTime_Persian: ''
+  OneTime_Persian: نیازمند ۳ تگ دانش برای بازی شدن است. تولید انرژی خود را یک واحد
+    کاهش دهید.
   Action_English: 'Action: Draw 2 cards.'
   OneTime_English: Requires 3 science tags to play. Decrease your energy production
     1 step.
