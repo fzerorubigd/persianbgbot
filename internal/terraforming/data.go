@@ -1,6 +1,7 @@
 package terraforming
 
 import (
+	"embed"
 	"fmt"
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
 	"github.com/pkg/errors"
@@ -8,6 +9,9 @@ import (
 	"sort"
 	"strings"
 )
+
+//go:embed data
+var data embed.FS
 
 // card is a single card in game
 type card struct {
@@ -86,7 +90,7 @@ func (t *terraformingMars) Button() bool {
 
 // loadCards load bloodrage cards from bin data
 func loadCards() (*terraformingMars, error) {
-	fl, err := Asset("data/cards.yaml")
+	fl, err := data.ReadFile("data/cards.yaml")
 	if err != nil {
 		return nil, errors.Wrap(err, "can not load the files from bin storage")
 	}

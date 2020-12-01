@@ -2,6 +2,7 @@
 package bloodrage
 
 import (
+	"embed"
 	"fmt"
 
 	"github.com/pkg/errors"
@@ -9,6 +10,9 @@ import (
 
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
 )
+
+//go:embed data
+var data embed.FS
 
 // card is a single card in game
 type card struct {
@@ -84,7 +88,7 @@ func (b *bloodRage) Button() bool {
 
 // loadCards load bloodrage cards from bin data
 func loadCards() (*bloodRage, error) {
-	fl, err := Asset("data/cards.yaml")
+	fl, err := data.ReadFile("data/cards.yaml")
 	if err != nil {
 		return nil, errors.Wrap(err, "can not load the files from bin storage")
 	}
