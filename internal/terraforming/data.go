@@ -129,7 +129,7 @@ func loadCards() (*terraformingMars, error) {
 <i>Work In Progress</i>
 I found the basic card translation in BGG (PDF format) by <b>Ali Nasery</b> (Instagram: @boardgamerboy) 
 I couldn't find this ID in instagram, so I have no confirmation from him so far.
-Some edit (not much, just few places) and converting to YAML by Forud Ghafouri
+Some edit (not much, just few places) and Corporate card translation and converting to YAML by Forud Ghafouri
 `))
 
 	return tm, nil
