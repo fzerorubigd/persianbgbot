@@ -99,39 +99,39 @@
 - name: Drewkaiden
   type: Planet
   text: Advance + 1 diplomacy
-  text_persian: 'دیپلماسی را یکی بیشتر کنید '
+  text_persian: 'دیپلماسی روی مدار یک سیاره یکی بیشتر کنید '
   note: ''
   note_persian: ''
 - name: Leandra
   type: Planet
   text: Advance +1 economy
-  text_persian: اکونومی را یکی بیشتر کنید
+  text_persian: 'اکونومی روی مدار یک سیاره یکی بیشتر کنید '
   note: ''
   note_persian: ''
 - name: Birkomius
   type: Planet
   text: If you are followed on this turn, acquire 1 culture per follow
-  text_persian: 'اگر در این نوبت کسی شما را دنبال کرد یک فرهنگ به ازای هر دنبال کردنی
-    بگیرید، '
+  text_persian: اگر در این نوبت کسی شما را دنبال کرد یک فرهنگ به ازای هر دنبال کردنی
+    بگیرید
   note: ''
   note_persian: ''
 - name: Bisschop
   type: Planet
   text: If you are followed on this turn, acquire 1 energy per follow
-  text_persian: 'اگر در این نوبت کسی شما را دنبال کرد یک انرژی به ازای هر دنبال کردنی
-    بگیرید، '
+  text_persian: اگر در این نوبت کسی شما را دنبال کرد یک انرژی به ازای هر دنبال کردنی
+    بگیرید
   note: ''
   note_persian: ''
 - name: Tifnod
   type: Planet
   text: Regress 1 enemy ship by 1 diplomacy
-  text_persian: یک سفینه دشمن روی نوار دیپلماسی یک درجه به عقب ببرید
+  text_persian: یک سفینه دشمن روی مدار دیپلماسی یک سیاره یک درجه به عقب ببرید
   note: Can't move below start
   note_persian: نباید از خانه شروع عقب تر برود
 - name: Vizcarra
   type: Planet
   text: Regress 1 enemy ship by 1 economy
-  text_persian: یک سفینه دشمن روی نوار اکونومی یک درجه به عقب ببرید
+  text_persian: یک سفینه دشمن روی مدار اکونومی یک سیاره یک درجه به عقب ببرید
   note: Can't move below start
   note_persian: نباید از خانه شروع عقب تر برود
 - name: MJ-120210
@@ -205,27 +205,28 @@
 - name: Padraigin-3110
   type: Planet
   text: Spend 2 culture to advance +2 diplomacy
-  text_persian: دو فرهنگ خرج کنید و روی یک نوار دیپلماسی دوتا بالا بروید
+  text_persian: دو فرهنگ خرج کنید و روی یک مدار دیپلماسی  یک سیاره دوتا جلو بروید
   note: ''
   note_persian: ''
 - name: Jorg
   type: Planet
   text: Spend 2 culture to regress 1 enemy ship by -2
-  text_persian: دو فرهنگ خرج کنید تا یک سفینه دشمن را روی نوار دیپلماسی یا اکونومی
-    دو تا به عقب ببرید
+  text_persian: دو فرهنگ خرج کنید تا یک سفینه دشمن را روی مدار یک سیاره دو تا به عقب
+    ببرید
   note: ''
   note_persian: ''
 - name: Nakagawakozi
   type: Planet
   text: Spend 2 energy to advance +2 economy
-  text_persian: دو انرژی خرج کنید تا یک سفینه در نوار اکونومی  را دو تا بالا ببرید
+  text_persian: دو انرژی خرج کنید تا یک سفینه در مدار اکونومی  یک سیاره را دو تا جلو
+    ببرید
   note: ''
   note_persian: ''
 - name: Brumbaugh
   type: Planet
   text: Spend 2 energy to regress 2 enemy ships by -1
-  text_persian: دو فرهنگ خرج کنید تا دو سفینه دشمن را روی نوار دیپلماسی یا اکونومی
-    هر کدام یکی تا به عقب ببرید
+  text_persian: دو فرهنگ خرج کنید تا دو سفینه دشمن را روی مدار یک سیاره هر کدام یکی
+    به عقب ببرید
   note: ''
   note_persian: ''
 - name: Umbra-Forum
@@ -255,8 +256,8 @@
 - name: Andellouxian-6
   type: Planet
   text: Displace 1 of your orbiting ships,  acquire energy/culture = ship's level
-  text_persian: یکی از سفینه های خودتان را از روی نوار اکونوموی یا دیپلماسی به کهکشان
-    خود برگردانید و به اندازه شماره آن روی نوار انرژی یا فرهنگ بگیرید
+  text_persian: یکی از سفینه های خودتان را از روی مدار یک سیاره به کهکشان خود برگردانید
+    و به اندازه شماره آن روی نوار انرژی یا فرهنگ بگیرید
   note: Your choice of one resource
   note_persian: انرژی یا فرهنگ، انتخاب با شماست
 - name: Walsfeo
@@ -283,7 +284,8 @@
 - name: BSW-10-1
   type: Planet
   text: Regress one of your ships -1, then advance another one of your ships +1
-  text_persian: یک سفینه خود را یکی به عقب بکشید و یکی دیگر را یکی بالا ببرید
+  text_persian: یک سفینه خود را روی مدار یک سیاره یکی به عقب بکشید و یکی دیگر را یکی
+    بالا ببرید
   note: Can't advance if you can't regress
   note_persian: اگر یکی عقب نرود، یکی دیگر نمی‌تواند جلو برود
 - name: Aughmoore
@@ -295,7 +297,7 @@
 - name: Shouhua
   type: Planet
   text: Advance a ship +1
-  text_persian: یک سفینه را یکی جلو ببرید
+  text_persian: یک سفینه را روی مدار یک سیاره یکی جلو ببرید
   note: ''
   note_persian: ''
 - name: Nibiru
@@ -307,20 +309,21 @@
 - name: Gort
   type: Planet
   text: Move one of your ships to another colony track at an equal level
-  text_persian: یکی از سفینه‌های خودتان را از روی نوار کولونی سازی یک سیاره به همان
-    شماره در یک سیاره دیگر انتقال دهید
+  text_persian: یکی از سفینه‌های خودتان را از روی مدار یک سیاره به همان شماره در مدار
+    یک سیاره دیگر انتقال دهید
   note: ''
   note_persian: ''
 - name: Terra-Bettia
   type: Planet
   text: Other players advance a ship +1, then you advance a ship +2
-  text_persian: باقی بازیکن‌ها یک سفینه را یکی جلو ببرند، شما دو تا.
+  text_persian: باقی بازیکن‌ها یک سفینه را روی مدار یک سیاره یکی جلو ببرند، شما دو
+    تا.
   note: ''
   note_persian: ''
 - name: K-Widow
   type: Planet
   text: Regress an enemy ship -1
-  text_persian: یک سفینه دشمن را در نوار کولونی سازی یکی به عقب ببرید
+  text_persian: یک سفینه دشمن را مدار یک سیاره یکی به عقب ببرید
   note: Can't move below start
   note_persian: نباید از خانه شروع عقب تر برود
 - name: Piedes
