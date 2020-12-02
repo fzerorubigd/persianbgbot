@@ -111,14 +111,14 @@
 - name: Birkomius
   type: Planet
   text: If you are followed on this turn, acquire 1 culture per follow
-  text_persian: 'اگر در این نوبت اکشنی را دنبال کردید یک فرهنگ به ازای هر دنبال کردنی
+  text_persian: 'اگر در این نوبت کسی شما را دنبال کرد یک فرهنگ به ازای هر دنبال کردنی
     بگیرید، '
   note: ''
   note_persian: ''
 - name: Bisschop
   type: Planet
   text: If you are followed on this turn, acquire 1 energy per follow
-  text_persian: 'اگر در این نوبت اکشنی را دنبال کردید یک انرژی به ازای هر دنبال کردنی
+  text_persian: 'اگر در این نوبت کسی شما را دنبال کرد یک انرژی به ازای هر دنبال کردنی
     بگیرید، '
   note: ''
   note_persian: ''
