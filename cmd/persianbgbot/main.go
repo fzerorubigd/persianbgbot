@@ -10,6 +10,7 @@ import (
 	"github.com/ogier/pflag"
 
 	_ "github.com/fzerorubigd/persianbgbot/internal/bloodrage"
+	_ "github.com/fzerorubigd/persianbgbot/internal/teg"
 	_ "github.com/fzerorubigd/persianbgbot/internal/terraforming"
 	_ "github.com/fzerorubigd/persianbgbot/internal/tinytown"
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
