@@ -24,7 +24,7 @@ func main() {
 	)
 
 	pflag.StringVar(&token, "token", "", "Telegram bot token, if it's empty, it tries the env TELEGRAM_BOT_TOKEN")
-	pflag.StringVar(&gameFolder, "data-folder", "/home/f0rud/src/github.com/fzerorubigd/persianbgbot/contrib", "Data folder to read files from")
+	pflag.StringVar(&gameFolder, "data-folder", "", "Data folder to read files from")
 	pflag.IntVar(&menuSize, "menu-size", 7, "Items in menu (other than navigation items)")
 	pflag.BoolVar(&debug, "debug", false, "Show debug log")
 
@@ -48,7 +48,7 @@ func main() {
 
 	bot, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
-		log.Panic(err)
+		log.Fatal(err)
 	}
 
 	bot.Debug = debug

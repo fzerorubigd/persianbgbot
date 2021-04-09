@@ -11,5 +11,8 @@ GAME = $(word 2, $(SPLIT))
 build:
 	go build -o $(ROOT)/bin/persianbgbot ./cmd/persianbgbot
 
-install: build
+embed:
+	go build -tags embed -o $(ROOT)/bin/persianbgbot ./cmd/persianbgbot
+
+install: embed
 	install $(ROOT)/bin/persianbgbot /usr/local/bin/persianbgbot

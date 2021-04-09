@@ -24,6 +24,10 @@ func loadFile(file string) error {
 }
 
 func loadPath(path string) error {
+	if path == "" {
+		log.Print("No path provided to load game")
+		return nil
+	}
 	err := filepath.Walk(path, func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
 			return err
