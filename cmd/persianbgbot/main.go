@@ -9,7 +9,6 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"github.com/ogier/pflag"
 
-	_ "github.com/fzerorubigd/persianbgbot/internal/bloodrage"
 	_ "github.com/fzerorubigd/persianbgbot/internal/teg"
 	_ "github.com/fzerorubigd/persianbgbot/internal/terraforming"
 	_ "github.com/fzerorubigd/persianbgbot/internal/tinytown"
@@ -21,11 +20,14 @@ func main() {
 	ctx := clictx.Context(syscall.SIGABRT, syscall.SIGTERM, syscall.SIGKILL)
 
 	var (
-		token    string
-		menuSize int
-		debug    bool
+		token      string
+		menuSize   int
+		debug      bool
+		gameFolder string
 	)
+
 	pflag.StringVar(&token, "token", "", "Telegram bot token, if it's empty, it tries the env TELEGRAM_BOT_TOKEN")
+	pflag.StringVar(&gameFolder, "data-folder", "/home/f0rud/src/github.com/fzerorubigd/persianbgbot/contrib", "Data folder to read files from")
 	pflag.IntVar(&menuSize, "menu-size", 7, "Items in menu (other than navigation items)")
 	pflag.BoolVar(&debug, "debug", false, "Show debug log")
 
@@ -33,6 +35,11 @@ func main() {
 	if token == "" {
 		token = os.Getenv("TELEGRAM_BOT_TOKEN")
 	}
+
+	if err := loadPath(gameFolder); err != nil {
+		log.Fatal(err)
+	}
+
 	telegram.InitLibrary(func() telegram.Menu {
 		m, err := menu.CreateMemoryMenu(menuSize, menu.AllGames()...)
 		if err != nil {

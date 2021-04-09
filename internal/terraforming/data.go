@@ -138,7 +138,7 @@ Some edit (not much, just few places) and Corporate card translation and convert
 func init() {
 	b, err := loadCards()
 	if err != nil {
-		panic("invalid data")
+		panic(err)
 	}
 	menu.RegisterGame(b)
 }

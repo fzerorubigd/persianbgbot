@@ -1,6 +1,6 @@
 module github.com/fzerorubigd/persianbgbot
 
-go 1.15
+go 1.16
 
 require (
 	github.com/fzerorubigd/clictx v1.0.1

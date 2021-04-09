@@ -1,0 +1,657 @@
+{
+  "name": "Bloodrage",
+  "caption": "Select one Age group",
+  "about": "Bloodrage Cards\n<b>Translated by</b>: Forud Ghafouri",
+  "indices": [
+    {
+      "name": "Age 1",
+      "caption": "Select Age 1 Card",
+      "index_field": "Name",
+      "group_name": "Age 1"
+    },
+    {
+      "name": "Age 2",
+      "caption": "Select Age 2 Card",
+      "index_field": "Name",
+      "group_name": "Age 2"
+    },
+    {
+      "name": "Age 3",
+      "caption": "Select Age 3 Card",
+      "index_field": "Name",
+      "group_name": "Age 3"
+    }
+  ],
+  "cards": {
+    "Age 1": [
+      {
+        "Name": "Frigga's Grace",
+        "STR": 2,
+        "PlayerCount": "(2+/4+)",
+        "English": "If you pillage successfully, raise another (i.e. different) of your clan stats by 1.",
+        "Persian": "اگر غارت موفقیت آمیز بود یکی دیگر از نشانگرهای کلن را یک عدد بالا ببرید"
+      },
+      {
+        "Name": "Heimdall's Sight",
+        "STR": "متغیر",
+        "PlayerCount": "(2+)",
+        "English": "This card has the same value as the highest revealed enemy card",
+        "Persian": "این کارت مقدارش با مقدار بالاترین کارت حریف برابر است"
+      },
+      {
+        "Name": "Loki's Trickery",
+        "STR": 0,
+        "PlayerCount": "(2+/4+)",
+        "English": "If you lose, steal 1 rage from the winning player.",
+        "Persian": "اگر شما باختید، یک خشم از بازیکن برنده بدزدید"
+      },
+      {
+        "Name": "Odin's Smite",
+        "STR": 1,
+        "PlayerCount": "(2+/3+)",
+        "English": "Destroy one warrior from each opponent in this province before comparing STR.",
+        "Persian": "قبل از اینکه مقایسه قدرت انجام دهید از هر رقیب در این ایالت یک جنگجو نابود کنید"
+      },
+      {
+        "Name": "Thor's Hammer",
+        "STR": 1,
+        "PlayerCount": "(2+/5+)",
+        "English": "Gain 3 glory if you win this battle.",
+        "Persian": "اگر در این نبرد پیروز شدید سه افتخار – گلوری – دریافت کنید"
+      },
+      {
+        "Name": "Tyr's Bash",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Crush",
+        "STR": 4,
+        "PlayerCount": "(4+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Smash",
+        "STR": 3,
+        "PlayerCount": "(2+/3+/5+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Smite",
+        "STR": 5,
+        "PlayerCount": "(2+/5+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Frigga's Charm",
+        "STR": 0,
+        "PlayerCount": "(2+)",
+        "English": "Upgrade cards cost you 1 less to play.",
+        "Persian": "کارتهای آپگرید یک خشم کمتر برای بازی قیمت دارند"
+      },
+      {
+        "Name": "Frigga's Succor",
+        "STR": 2,
+        "PlayerCount": "(3+)",
+        "English": "When you invade with any figure, you may invade with an additional warrior in that province for free.",
+        "Persian": "با هر فیگری که حمله میکنید یک جنگجو هم با آن فیگر به صورت مجانی به همان ایالت اضافه کنید"
+      },
+      {
+        "Name": "Friggas's Chosen (M)",
+        "STR": 0,
+        "PlayerCount": "(2+/4+)",
+        "English": "Add 1 mystic to your reserve. Your mystics may retreat to an adjacent outer province instead of being destroyed.",
+        "Persian": "یک میستیک به رزرو خودتان اضافه کنید. میستیک های شما میتوانند به ایالتهای مجاور عقب‌نشینی کنند به جای اینکه نابود شوند"
+      },
+      {
+        "Name": "Loki's Blessing",
+        "STR": 1,
+        "PlayerCount": "(4+)",
+        "English": "If you lose a battle, you may invade that province with a warrior for free.",
+        "Persian": "اگر در نبرد ببازید میتوانید به آن ایالت یک جنگجو، بدون مصرف خشم (مجانی) اضافه کنید"
+      },
+      {
+        "Name": "Loki's Domain",
+        "STR": 1,
+        "PlayerCount": "(2+)",
+        "English": "Gain 1 glory for each figure you release from Valhalla.",
+        "Persian": "به ازای هر فیگری که از والهالا  برمیگردانید، یک افتخار – گلوری- بگیرید"
+      },
+      {
+        "Name": "Thor's Glory",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "Gain 2 glory whenever at least 2 enemy figures are destroyed in a battle you participate in.",
+        "Persian": "دو افتخار – گلوری – بگیرید اگر در نبردی که شما شرکت داشتید دست کم دو فیگر دشمن نابود شود"
+      },
+      {
+        "Name": "Tyr's Domain",
+        "STR": 0,
+        "PlayerCount": "(3+)",
+        "English": "After you reveal a quest card in combat, you may treat it as a +3 battle card.",
+        "Persian": "اگر یک کارت ماموریت (کوئست) در مبارزه رو کنید، میتوانید از آن به عنوان کارت +۳ استفاده کنید"
+      },
+      {
+        "Name": "Dwarf Chieftain",
+        "STR": 2,
+        "PlayerCount": "(2+/5+*)",
+        "English": "*Costs no rage to upgrade or invade.",
+        "Persian": "هزینه برای آپگرید یا حمله ندارد"
+      },
+      {
+        "Name": "Fenrir*",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "Ragnarök destroys Fenrir's province instead of the doomed one (unless it's Yggdrasil).",
+        "Persian": "رگناروگ ایالت Fenrir's را به جای ایالت در مسیر نابودی از بین میبرد، مگر اینکه ایگلدراسیل باشد"
+      },
+      {
+        "Name": "Mountain Giant*",
+        "STR": 3,
+        "PlayerCount": "(2+)",
+        "English": "This monster counts as a leader",
+        "Persian": "این هیولا یک فرمانده حساب میشود"
+      },
+      {
+        "Name": "Sea Serpent",
+        "STR": 3,
+        "PlayerCount": "(3+)",
+        "English": "This monster counts as a ship.",
+        "Persian": "این هیولا یک کشتی حساب میشود"
+      },
+      {
+        "Name": "Troll",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "When this monster invades a province, destroy all enemy warriors in it.",
+        "Persian": "وقتی این هیولا به یک ایالت حمله میکند همه جنگجویان آن ایالت نابود میشوند"
+      },
+      {
+        "Name": "Alfheim!",
+        "STR": 5,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Alfheim (gray)) province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Alfheim – خاکستری – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Glorious Death!",
+        "STR": 6,
+        "PlayerCount": "(2+/4+/5+)",
+        "English": "Have at least 4 figures in Valhalla (before Ragnarök). If completed, raise one of your clan stats by 1.",
+        "Persian": "دست کم ۴ فیگر در والهالا قبل از رگناروک داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Jotunheim!",
+        "STR": 5,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Jotunheim (blue) province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Jotunheim – آبی – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Manheim!",
+        "STR": 5,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Manheim (yellow)province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Manheim – زرد – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Widespread!",
+        "STR": 7,
+        "PlayerCount": "(5+)",
+        "English": "Have the most STR in at least 2 different provinces. If completed, raise one of you clan stats by 1.",
+        "Persian": "بیشترین STR در دو ایالت را داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Yggdrasil!",
+        "STR": 6,
+        "PlayerCount": "(3+)",
+        "English": "Have the most STR in Yggdrasil. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در ایلگدراسیل را داشته باشید اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Brothers in Arms",
+        "STR": 1,
+        "PlayerCount": "(2+/5+)",
+        "English": "*Each pair of your warriors in a province is 3 total STR.",
+        "Persian": "هر دو جنگجو شما در این ایالت ۳ قدرت دارند (به جای دو تا)"
+      },
+      {
+        "Name": "Loki's Dragons",
+        "STR": 2,
+        "PlayerCount": "(2+/5+)",
+        "English": "Gain 4 glory when a ship of yours is destroyed.",
+        "Persian": "وقتی که کشتی شما نابود شد ۴ افتخار بگیرید"
+      },
+      {
+        "Name": "Lord of Hammers",
+        "STR": 3,
+        "PlayerCount": "(2+/5+)",
+        "English": "If you successfully pillage with your leader, you may move him to an adjacent province.",
+        "Persian": "اگر با لیدر خودتان با موفقیت غارت کردید، میتوانید او را به ایالت مجاور انتقال دهید"
+      }
+    ],
+    "Age 2": [
+      {
+        "Name": "Heimdall's Eye",
+        "STR": 2,
+        "PlayerCount": "(2+/2+/3+/5+)",
+        "English": "You may play this card (and add its STR) after all players' battle cards are revealed.",
+        "Persian": "شما میتوانید این کارت را بعد از اینکه بقیه بازیکنها کارتهای خودشان را رو کردند رو کنید و قدرت آن را اضافه کنید"
+      },
+      {
+        "Name": "Heimdall's Watch",
+        "STR": 0,
+        "PlayerCount": "(2+)",
+        "English": "Discard all revealed cards. Gain glory equal to the total +STR revealed. Then Play new cards",
+        "Persian": "همه کارتهای رو شده را کنار بگذارید. به اندازه مجموع قدرتهای اضافه شده این کارتها افتخار بگیرید و کارت جدید بازی کنید."
+      },
+      {
+        "Name": "Loki's Backstab",
+        "STR": 0,
+        "PlayerCount": "(2+/4+)",
+        "English": "If you lose, steal 2 glory from the winning player.",
+        "Persian": "اگر باختید از بازیکن برنده دو افتخار بدزدید"
+      },
+      {
+        "Name": "Odin's Tide",
+        "STR": 1,
+        "PlayerCount": "(2+/4+)",
+        "English": "Before comparing STR, each player chooses and destroys all but one of his figures in this battle.",
+        "Persian": "قبل از اینکه مقایسه قدرت انجام دهید هر نفر یک فیگر خود در این نبرد را نگه دارد و بقیه را نابود کند"
+      },
+      {
+        "Name": "Thor's Oath",
+        "STR": 1,
+        "PlayerCount": "(2+/5+)",
+        "English": "If you win, raise one of your clan stats by 1.",
+        "Persian": "اگر برنده شدید یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Tyr's Crush",
+        "STR": 4,
+        "PlayerCount": "(2+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Rage",
+        "STR": 6,
+        "PlayerCount": "(2+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Smash",
+        "STR": 3,
+        "PlayerCount": "(4+/5+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Smite",
+        "STR": 5,
+        "PlayerCount": "(3+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Frigga's Protection",
+        "STR": 0,
+        "PlayerCount": "(2+)",
+        "English": "You may pay 1 rage to prevent a figure of yours from being destroyed.",
+        "Persian": "شما میتوانید یک خشم بدهید تا جلوی نابودی یک فیگر خود را بگیرید"
+      },
+      {
+        "Name": "Loki's Eminence",
+        "STR": 2,
+        "PlayerCount": "(3+)",
+        "English": "Gain 2 glory for each figure you release from Valhalla.",
+        "Persian": "به ازای هر فیگری که از والهالا  برمیگردانید، دو افتخار – گلوری- بگیرید"
+      },
+      {
+        "Name": "Odin's Chosen (M)",
+        "STR": 0,
+        "PlayerCount": "(2+/4+)",
+        "English": "Add 1 mystic to your reserve. Your mystics may invade a village occupied by a warrior or mystic, destroying that figure.",
+        "Persian": "یک میستیک به رزرو خودتان اضافه کنید. میستیک های شما میتوانند به یک روستای اشغال شده با یک جنگجو یا یک میستیک دیگر حمله کند و آن جنگجو یا میستیک نابود میشود"
+      },
+      {
+        "Name": "Odin's Inspiration",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "Double your glory award for dying during Ragnarök.",
+        "Persian": "افتخار کسب شده از مرگ در اثر رگناروک را دو برابر کنید"
+      },
+      {
+        "Name": "Thor's Domain",
+        "STR": 1,
+        "PlayerCount": "(4+)",
+        "English": "After you invade a province, you may pay 2 rage to immediately try to pillage it.",
+        "Persian": "بعد از اینکه به یک ایالت حمله کنید، میتوانید ۲ خشم بدهید و بلافاصله در همان نوبت آن را غارت کنید"
+      },
+      {
+        "Name": "Tyr's Challenge",
+        "STR": 0,
+        "PlayerCount": "(2+)",
+        "English": "As your action, you may pay 2 rage to \"repillage\" an already pillaged province.",
+        "Persian": "به عنوان یک اکشن میتوانید ۲ خشم بدهید و دوباره یک ایالتی که قبلا غارت شده است را مجددا غارت کنید"
+      },
+      {
+        "Name": "Tyr's Prowess",
+        "STR": 2,
+        "PlayerCount": "(3+)",
+        "English": "If you win a battle, you may keep any of your revealed cards, paying 1 rage each.",
+        "Persian": "اگر در نبرد پروز شدید میتوانید هر کدام از کارتهای خود را به قیمت هر کدام یک خشم نگه دارید"
+      },
+      {
+        "Name": "Dark Elf",
+        "STR": 1,
+        "PlayerCount": "(2+/5+*)",
+        "English": "This monster may invade Yggdrasil. Has 3 STR in Yggdrasil.",
+        "Persian": "این هیولا میتواند به ایلگدراسیل حمله کند، در ایلگدراسیل سه قدرت دارد"
+      },
+      {
+        "Name": "Fire Giant",
+        "STR": 4,
+        "PlayerCount": "(3+)",
+        "English": "When this monster invades a province, destroy all enemy non-monster figures in it.",
+        "Persian": "وقتی این هیولا به یک ایالت حمله میکند همه فیگرهای غیر هیولای آن ایالت نابود میشوند"
+      },
+      {
+        "Name": "Valkyrie",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "Gain 2 glory per enemy figure destroyed in battle with this monster.",
+        "Persian": "به ازای هر فیگری از دشمن که در نبرد با این هیولا نابود شدند دو افتخار بگیرید"
+      },
+      {
+        "Name": "Wolfman*",
+        "STR": 3,
+        "PlayerCount": "(2+)",
+        "English": "Only monsters count their STR in a battle with this monster.",
+        "Persian": "فقط بقیه هیولاها در نبرد با این هیولا شمرده میشوند"
+      },
+      {
+        "Name": "Alfheim!",
+        "STR": 7,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Alfheim (gray)) province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Alfheim – خاکستری – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Glorious Death!",
+        "STR": 8,
+        "PlayerCount": "(2+/4+/5+)",
+        "English": "Have at least 4 figures in Valhalla (before Ragnarök). If completed, raise one of your clan stats by 1.",
+        "Persian": "دست کم ۴ فیگر در والهالا قبل از رگناروک داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Jotunheim!",
+        "STR": 7,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Jotunheim (blue) province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Jotunheim – آبی – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Manheim!",
+        "STR": 7,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Manheim (yellow)province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Manheim – زرد – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Widespread!",
+        "STR": 10,
+        "PlayerCount": "(5+)",
+        "English": "Have the most STR in at least 2 different provinces. If completed, raise one of you clan stats by 1.",
+        "Persian": "بیشترین STR در دو ایالت را داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Yggdrasil!",
+        "STR": 8,
+        "PlayerCount": "(3+)",
+        "English": "Have the most STR in Yggdrasil. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در ایلگدراسیل را داشته باشید اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Experts in Arms",
+        "STR": 2,
+        "PlayerCount": "(2+/5+)",
+        "English": "Your warriors are now 2 STR. (And cost 2 rage to play.)",
+        "Persian": "جنگجویان شما از این به بعد دو قدرت حساب میشوند و دو خشم برای حمله نیاز دارند"
+      },
+      {
+        "Name": "Fire Dragons",
+        "STR": 2,
+        "PlayerCount": "(2+/5+)",
+        "English": "Gain 8 glory when a ship of yours is destroyed.",
+        "Persian": "وقتی که کشتی شما نابود شد ۸ افتخار بگیرید"
+      },
+      {
+        "Name": "Lord of Axes",
+        "STR": 3,
+        "PlayerCount": "(2+/5+)",
+        "English": "If you successfully pillage with your leader, raise one of you clan stats by 1.",
+        "Persian": "اگر با لیدر خودتان با موفقیت غارت کردید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      }
+    ],
+    "Age 3": [
+      {
+        "Name": "Heimdall's Gaze",
+        "STR": 3,
+        "PlayerCount": "(2+/3+)",
+        "English": "You may play this card (and add its STR) after all players' battle cards are revealed.",
+        "Persian": "شما میتوانید این کارت را بعد از اینکه بقیه بازیکنها کارتهای خودشان را رو کردند رو کنید و قدرت آن را اضافه کنید"
+      },
+      {
+        "Name": "Heimdall's Watch",
+        "STR": 0,
+        "PlayerCount": "(2+)",
+        "English": "Discard all revealed cards. Gain glory equal to the total +STR revealed. Then Play new cards",
+        "Persian": "همه کارتهای رو شده را کنار بگذارید. به اندازه مجموع قدرتهای اضافه شده این کارتها افتخار بگیرید و کارت جدید بازی کنید."
+      },
+      {
+        "Name": "Loki's Poison",
+        "STR": 0,
+        "PlayerCount": "(2+/5+)",
+        "English": "If you lose, take the winning player's revealed cards into your hand.",
+        "Persian": "اگر باختید کارت بازی شده توسط بازیکن برنده را بردارید"
+      },
+      {
+        "Name": "Odin's Judgement",
+        "STR": 2,
+        "PlayerCount": "(2+/4+)",
+        "English": "Gain 2 glory for each figure destroyed in this battle (including yours).",
+        "Persian": "دو افتخار – گلوری – بگیرید اگر در نبردی که شما شرکت داشتید دست کم دو فیگر (منجمله فیگرهای شما) نابود شود"
+      },
+      {
+        "Name": "Thor's Ascension",
+        "STR": 1,
+        "PlayerCount": "(2+/4+)",
+        "English": "If you win, gain 3 rage and 3 glory.",
+        "Persian": "اگر برنده شدید سه خشم و سه افتخار بگیرید"
+      },
+      {
+        "Name": "Thor's Primacy",
+        "STR": 3,
+        "PlayerCount": "(2+/3+)",
+        "English": "Cancel the text of each opponent's reveled card before it takes effect.",
+        "Persian": "متن روی کارتهای بقیه بازیکنان را خنثی کنید. این کارت قبل از همه بازی میشود"
+      },
+      {
+        "Name": "Tyr's Crush",
+        "STR": 4,
+        "PlayerCount": "(2+/5+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Judgement",
+        "STR": 8,
+        "PlayerCount": "(5+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Rage",
+        "STR": 6,
+        "PlayerCount": "(2+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Tyr's Smite",
+        "STR": 5,
+        "PlayerCount": "(4+)",
+        "English": "No effect",
+        "Persian": "بی اثر"
+      },
+      {
+        "Name": "Frigga's Domain",
+        "STR": 0,
+        "PlayerCount": "(2+)",
+        "English": "You may pay 1 rage to invade with any one of your figures from Valhalla.",
+        "Persian": "شما میتوانید با یک خشم با هر فیگری از خودتان که در والهالاست حمله کنید"
+      },
+      {
+        "Name": "Frigga's Sacrifice",
+        "STR": 1,
+        "PlayerCount": "(3+)",
+        "English": "As your action, you may destroy 2 of your figures to raise one of your clan stats by 1.",
+        "Persian": "به عنوان یک اکشن میتوانید ۲ فیگر خودتان را نابود کنیدو یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Loki's Wrath",
+        "STR": 3,
+        "PlayerCount": "(4+)",
+        "English": "Gain 3 glory for each figure you release from Valhalla.",
+        "Persian": "به ازای هر فیگری که از والهالا  برمیگردانید، سه افتخار – گلوری- بگیرید"
+      },
+      {
+        "Name": "Odin's Throne",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "Double the glory award for quests you complete.",
+        "Persian": "افتخار کسب شده از ماموریتها را دو برابر کنید"
+      },
+      {
+        "Name": "Thor's Chosen (M)",
+        "STR": 0,
+        "PlayerCount": "(2+/4+)",
+        "English": "Add 1 mystic to your reserve. Each time you win a battle, gain 3 glory for each of your participating mystics.",
+        "Persian": "یک میستیک به رزرو خودتان اضافه کنید. به ازای هر میستیکی که در نبردی که شما پیروز شدید حضور داشته باشد، سه افتخار بگیرید"
+      },
+      {
+        "Name": "Thor's Conquest",
+        "STR": 3,
+        "PlayerCount": "(2+)",
+        "English": "Gain 3 glory for each figure you have on the board at the end of the game.",
+        "Persian": "به ازای هر فیگری که روی بورد بعد از پایان بازی داشته باشید سه افتخار بگیرید"
+      },
+      {
+        "Name": "Tyr's Wrath",
+        "STR": 1,
+        "PlayerCount": "(3+)",
+        "English": "After you reveal a quest card in combat, you may treat it as a +5 battle card.",
+        "Persian": "اگر یک کارت ماموریت (کوئست) در مبارزه رو کنید، میتوانید از آن به عنوان کارت +۵ استفاده کنید"
+      },
+      {
+        "Name": "Frost Giant",
+        "STR": 4,
+        "PlayerCount": "(2+)",
+        "English": "If you successfully pillage with this monster, gain the pillage reward again.",
+        "Persian": "اگر با این هیولا با موفقیت غارت کنید، جایزه غارت را دوبار میگیرید"
+      },
+      {
+        "Name": "Mystic Troll*",
+        "STR": 2,
+        "PlayerCount": "(2+)",
+        "English": "Your figures invade this monster's province for free.",
+        "Persian": "فیگرهای شما به ایالتی که این هیولا در آن باشند به رایگان حمله میکنند"
+      },
+      {
+        "Name": "Soldier of Hel",
+        "STR": 3,
+        "PlayerCount": "(2+/5+*)",
+        "English": "*Costs no rage to upgrade or invade.",
+        "Persian": "هزینه برای آپگرید یا جمله ندارد"
+      },
+      {
+        "Name": "Völur Witch",
+        "STR": 3,
+        "PlayerCount": "(3+)",
+        "English": "May retreat from an outer province to Yggdrasil instead of being destroyed.",
+        "Persian": "میتواند از یک ایالت بیرونی به ایگدراسیل عقب نشینی کند به جای اینکه نابود شود"
+      },
+      {
+        "Name": "Alfheim!",
+        "STR": 9,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Alfheim (gray)) province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Alfheim – خاکستری – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Glorious Death!",
+        "STR": 11,
+        "PlayerCount": "(2+/4+/5+)",
+        "English": "Have at least 4 figures in Valhalla (before Ragnarök). If completed, raise one of your clan stats by 1.",
+        "Persian": "دست کم ۴ فیگر در والهالا قبل از رگناروک داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Jotunheim!",
+        "STR": 9,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Jotunheim (blue) province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Jotunheim – آبی – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Manheim!",
+        "STR": 9,
+        "PlayerCount": "(2+/4+)",
+        "English": "Have the most STR in at least one Manheim (yellow)province. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در یکی از ایالتهای Manheim – زرد – داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Widespread!",
+        "STR": 15,
+        "PlayerCount": "(5+)",
+        "English": "Have the most STR in at least 2 different provinces. If completed, raise one of you clan stats by 1.",
+        "Persian": "بیشترین STR در دو ایالت را داشته باشید. اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Yggdrasil!",
+        "STR": 10,
+        "PlayerCount": "(3+)",
+        "English": "Have the most STR in Yggdrasil. If completed, raise one of your clan stats by 1.",
+        "Persian": "بیشترین STR در ایلگدراسیل را داشته باشید اگر موفق شدید، یکی از نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Eternal Dragons",
+        "STR": 2,
+        "PlayerCount": "(2+/5+)",
+        "English": "Gain 12 glory when a ship of yours is destroyed.",
+        "Persian": "وقتی که کشتی شما نابود شد ۱۲ افتخار بگیرید"
+      },
+      {
+        "Name": "Lord of Spears",
+        "STR": 3,
+        "PlayerCount": "(2+/5+)",
+        "English": "If you successfully pillage with your leader, raise all your clan stats by 1.",
+        "Persian": "اگر با لیدر خودتان با موفقیت غارت کردید، همه نشانگرهای کلنتان را یکی بالا ببرید"
+      },
+      {
+        "Name": "Masters in Arms",
+        "STR": 2,
+        "PlayerCount": "(2+/5+)",
+        "English": "*Each pair of your warriors in a province is 6 total STR.",
+        "Persian": "هر جفت از جنگجوهای شما در یک ایالت ۶ قدرت حساب میشوند"
+      }
+    ]
+  },
+  "template": "<i><b>{{ .Card.Name }}</b></i>\n<b>قدرت کارت (STR)</b>:\n{{ .Card.STR }}\n<b>متن اصلی</b>:\n{{ .Card.English }}\n<b>ترجمه</b>:\n{{ .Card.Persian }}"
+}
