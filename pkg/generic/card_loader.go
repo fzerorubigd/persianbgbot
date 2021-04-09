@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"sort"
 	"text/template"
 
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
@@ -17,6 +18,7 @@ type IndexFileStruct struct {
 	IndexField string `json:"index_field"`
 	GroupName  string `json:"group_name"`
 	Template   string `json:"template,omitempty"`
+	NoButton   bool   `json:"no_button"`
 }
 
 type GameFileStruct struct {
@@ -60,6 +62,7 @@ type Group struct {
 	Name        string
 	CaptionText string
 	Cards       []menu.Item
+	NoButton    bool
 }
 
 func (a *Group) Caption() string {
@@ -75,8 +78,7 @@ func (a *Group) Load() []menu.Item {
 }
 
 func (a *Group) Button() bool {
-	// Groups are always button
-	return true
+	return !a.NoButton
 }
 
 // Card is a single card in game
@@ -143,6 +145,7 @@ func buildIndex(idx *IndexFileStruct, cards map[string][]map[string]interface{})
 	result := &Group{
 		Name:        idx.Name,
 		CaptionText: idx.Caption,
+		NoButton:    idx.NoButton,
 	}
 
 	for group := range cards {
@@ -150,12 +153,16 @@ func buildIndex(idx *IndexFileStruct, cards map[string][]map[string]interface{})
 			continue
 		}
 
-		cards, err := buildGroup(idx, cards[group])
+		list, err := buildGroup(idx, cards[group])
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to build group %q", group)
 		}
-		result.Cards = append(result.Cards, cards...)
+		result.Cards = append(result.Cards, list...)
 	}
+
+	sort.Slice(result.Cards, func(i, j int) bool {
+		return result.Cards[i].Index() < result.Cards[j].Index()
+	})
 
 	return result, nil
 }
@@ -184,6 +191,10 @@ func loadCards(r io.Reader) (*Game, error) {
 		}
 		result.Items = append(result.Items, index)
 	}
+
+	sort.Slice(result.Items, func(i, j int) bool {
+		return result.Items[i].Index() < result.Items[j].Index()
+	})
 
 	result.Items = append(result.Items, menu.NewSimpleLeaf("About", game.About))
 

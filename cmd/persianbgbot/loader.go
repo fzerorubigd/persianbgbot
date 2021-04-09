@@ -2,10 +2,11 @@ package main
 
 import (
 	"io/fs"
+	"log"
 	"os"
 	"path/filepath"
 
-	genericloader "github.com/fzerorubigd/persianbgbot/internal/generic"
+	genericloader "github.com/fzerorubigd/persianbgbot/pkg/generic"
 
 	"github.com/pkg/errors"
 )
@@ -32,7 +33,11 @@ func loadPath(path string) error {
 			return nil
 		}
 
-		return loadFile(path)
+		if err := loadFile(path); err != nil {
+			log.Printf("Load file %q failed, ignoring", path)
+		}
+
+		return nil
 	})
 
 	return errors.Wrapf(err, "walk path %q failed", path)

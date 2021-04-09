@@ -1,23 +1,23 @@
 {
   "name": "Bloodrage",
-  "caption": "Select one Age group",
+  "caption": "یک عصر را انتخاب کنید",
   "about": "Bloodrage Cards\n<b>Translated by</b>: Forud Ghafouri",
   "indices": [
     {
-      "name": "Age 1",
-      "caption": "Select Age 1 Card",
+      "name": "عصر اول",
+      "caption": "یک کارت (یا حرف اول اسم کارت) را انتخاب کنید",
       "index_field": "Name",
       "group_name": "Age 1"
     },
     {
-      "name": "Age 2",
-      "caption": "Select Age 2 Card",
+      "name": "عصر دوم",
+      "caption": "یک کارت (یا حرف اول اسم کارت) را انتخاب کنید",
       "index_field": "Name",
       "group_name": "Age 2"
     },
     {
-      "name": "Age 3",
-      "caption": "Select Age 3 Card",
+      "name": "عصر سوم",
+      "caption": "یک کارت (یا حرف اول اسم کارت) را انتخاب کنید",
       "index_field": "Name",
       "group_name": "Age 3"
     }

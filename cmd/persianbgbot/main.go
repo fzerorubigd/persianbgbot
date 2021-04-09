@@ -9,9 +9,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"github.com/ogier/pflag"
 
-	_ "github.com/fzerorubigd/persianbgbot/internal/teg"
 	_ "github.com/fzerorubigd/persianbgbot/internal/terraforming"
-	_ "github.com/fzerorubigd/persianbgbot/internal/tinytown"
 	"github.com/fzerorubigd/persianbgbot/pkg/menu"
 	"github.com/fzerorubigd/persianbgbot/pkg/telegram"
 )
