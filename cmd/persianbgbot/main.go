@@ -1,11 +1,12 @@
 package main
 
 import (
+	"context"
 	"log"
 	"os"
+	"os/signal"
 	"syscall"
 
-	"github.com/fzerorubigd/clictx"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"github.com/ogier/pflag"
 
@@ -14,7 +15,8 @@ import (
 )
 
 func main() {
-	ctx := clictx.Context(syscall.SIGABRT, syscall.SIGTERM, syscall.SIGKILL)
+	ctx, cnl := signal.NotifyContext(context.Background(), syscall.SIGABRT, syscall.SIGTERM, syscall.SIGKILL)
+	defer cnl()
 
 	var (
 		token      string
